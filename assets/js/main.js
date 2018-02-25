@@ -248,6 +248,7 @@
         var form = $('#search_form');
         var icon = $('.search-icon');
 
+        // Icon Trigger
         icon.on("click", function (e) {
             form.slideToggle();
             e.stopPropagation();
