@@ -136,6 +136,7 @@
     // ========================== Testimonials Slider ==========================
     function testSlider() {
         var slider = $('.test-slider');
+        // Slider init
         slider.owlCarousel({
             loop: true,
             autoplay: true,
