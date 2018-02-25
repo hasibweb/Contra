@@ -1,0 +1,191 @@
+/*============================================
+                    Hero
+=============================================*/
+
+.cd-hero {
+    height: 100vh;
+}
+
+.hero-slider {
+    height: 100%;
+    .item {
+        // padding: 350px 0 180px;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        .container {
+            height: 100%;
+        }
+        .row {
+            display: flex;
+            align-items: center;
+            padding-top: 125px;
+            height: 100%;
+            position: relative;
+        }
+        .overlay {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.3);
+            left: 0;
+            top: 0;
+        }
+    }
+    .slide-text {
+        color: #fff;
+        position: relative;
+        z-index: 2;
+        padding-left: 65px;
+        h1,
+        p,
+        a {
+            color: #fff;
+        }
+        p {
+            font-size: 20px;
+            line-height: 28px;
+            margin: 23px 0 44px;
+            width: 80%;
+            max-width: 100%;
+        }
+        a:hover {
+            background: darken($primary, 10%);
+        }
+        .hvr-icon-forward:before {
+            content: '\f105';
+            margin-left: 10px;
+        }
+    }
+    .hero-human-img {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        text-align: center;
+        z-index: 2;
+        img {
+            height: 66vh;
+        }
+    }
+}
+
+// Customize Owl-Carousel
+.hero-slider.owl-carousel .owl-stage-outer,
+.hero-slider.owl-carousel .owl-stage-outer .owl-stage,
+.hero-slider.owl-carousel .owl-stage-outer .owl-stage .owl-item {
+    height: 100%;
+}
+
+// Owl Nav
+.hero-slider.owl-carousel .owl-nav {
+    position: absolute;
+    top: 59%;
+    width: 100%;
+}
+
+.hero-slider.owl-carousel .owl-nav>* {
+    position: absolute;
+    z-index: 5;
+    color: #fff;
+    line-height: 36px;
+    width: 36px;
+    text-align: center;
+    border: 2px solid #fff;
+    display: block;
+    font-size: 1.3rem;
+}
+
+.hero-slider.owl-carousel .owl-nav .owl-next {
+    right: 20px;
+}
+
+.hero-slider.owl-carousel .owl-nav .owl-prev {
+    left: 20px;
+}
+
+/* Responsive Hero */
+
+@include media('large') {
+    .hero-slider {
+        .item {
+            .slide-text {
+                padding-left: 55px;
+            }
+        }
+    }
+}
+
+@include media('medium') {
+    .hero-slider {
+        .item {
+            .slide-text {
+                padding-left: 55px;
+                h1 {
+                    font-size: 40px;
+                    line-height: 50px;
+                }
+                p {
+                    font-size: 18px;
+                    line-height: 26px;
+                    width: 90%;
+                }
+            }
+            .row {
+                padding-top: 10px;
+            }
+        }
+    }
+    .hero-slider.owl-carousel .owl-nav {
+        top: 45%;
+    }
+}
+
+@include media('small') {
+    .hero-slider {
+        .item {
+            .slide-text {
+                padding: 0 50px;
+                h1 {
+                    font-size: 26px;
+                    line-height: 36px;
+                }
+                p {
+                    font-size: 16px;
+                    line-height: 26px;
+                    width: 90%;
+                    margin: 18px 0 25px;
+                }
+            }
+            .row {
+                padding-top: 20px;
+            } // .overlay {
+            //     display: block;
+            // }
+        }
+    }
+    .hero-slider.owl-carousel .owl-nav {
+        top: 45%;
+    }
+    .hero-slider.owl-carousel .owl-nav .owl-prev {
+        left: 5px;
+    }
+    .hero-slider.owl-carousel .owl-nav .owl-next {
+        right: 5px;
+    }
+}
+
+@include media('mobi') {
+    .hero-slider {
+        .item {
+            .slide-text {
+                p {
+                    margin: 15px 0 25px;
+                }
+            }
+            .row {
+                padding-top: 55px;
+            }
+        }
+    }
+}

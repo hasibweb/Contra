@@ -1,0 +1,434 @@
+/*=============================================
+                Home Styles
+=============================================*/
+
+/* =============== We Provide ================ 
+============================================*/
+
+.we-provide {
+    padding: 100px 0 50px;
+}
+
+.provide-first-row {
+    margin-bottom: 90px;
+    h2 {
+        font-weight: bold;
+    }
+}
+
+.provide-second-row {
+    h4 {
+        font-weight: 500;
+    }
+    .block-img {
+        margin-right: 10px;
+        img {
+            max-width: inherit;
+        }
+    }
+}
+
+/* ============ We Provide// ============= */
+
+@include media('small') {
+    .provide-first-row {
+        h2 {
+            font-size: 30px;
+            line-height: 42px;
+        }
+    }
+}
+
+/* ============ We Provide Responsive// ============= */
+
+/* =============== Our Services ================ 
+==============================================*/
+
+.our-services {
+    padding: 50px 0 80px;
+    .section-heading {
+        margin-bottom: 45px;
+    }
+}
+
+.service-cards {
+    .card {
+        border: 0;
+        &:hover {
+            .card-title {
+                color: $primary;
+            }
+            figcaption {
+                bottom: 0;
+            }
+        }
+        .card-img-top {
+            border-radius: 0;
+        }
+        .card-body {
+            padding: 0;
+            .card-title {
+                margin: 10px 0 10px;
+            }
+        }
+    }
+    figure {
+        position: relative;
+        overflow: hidden;
+        figcaption {
+            position: absolute;
+            bottom: calc(0% - 70px);
+            left: 0;
+            text-align: center;
+            background: #282828;
+            transition: .3s ease-in;
+            width: 100%;
+            padding: 9px 0;
+            color: #fff;
+            a {
+                color: #fff;
+                &:hover {
+                    color: $primary;
+                }
+            }
+            .hvr-icon-forward:before {
+                content: '\f178';
+                right: 4px;
+            }
+        }
+    }
+}
+
+/* =============== Our Services// ================ */
+
+/* =============== Recent Project ================ 
+================================================*/
+
+.recent-project {
+    padding: 80px 0 40px;
+    background: #101a2c;
+    color: #fff;
+    .section-heading {
+        h3 {
+            color: #fff;
+        }
+    }
+}
+
+@mixin filterActive() {
+    color: $primary;
+    text-decoration: underline;
+}
+
+.service-filter-nav {
+    button {
+        background: transparent;
+        color: #fff;
+        padding: 10px 20px;
+        &.active {
+            @include filterActive();
+        }
+        &:hover {
+            @include filterActive();
+        }
+    }
+}
+
+.service-filter-items {
+    figure {
+        position: relative;
+        overflow: hidden;
+        margin-bottom: 30px;
+        &:hover {
+            >img {
+                transform: scale(1.5);
+                transition: 10s ease;
+            }
+            .overlay {
+                opacity: 1;
+            }
+            figcaption {
+                opacity: 1;
+                h4 {
+                    transform: translateY(0);
+                }
+                p {
+                    transform: translateY(0);
+                }
+            }
+        }
+        .overlay {
+            position: absolute;
+            width: calc(100% + 200px);
+            height: calc(100% + 200px);
+            left: -100px;
+            top: -100px;
+            background: #222f44cc;
+            opacity: 0;
+            @include transition();
+            transition: .3s ease-in-out;
+        }
+    }
+    figcaption {
+        z-index: 8;
+        position: absolute;
+        top: 8%;
+        left: 6%;
+        bottom: 8%;
+        right: 6%;
+        text-align: center;
+        opacity: 0;
+        border: 1px dashed #fff;
+        padding: 10px;
+        background: transparent;
+        @include transition();
+        .caption-inner {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+        }
+        h4 {
+            color: #fff;
+            transform: translateY(-20px);
+            transition: .3s;
+        }
+        p {
+            transform: translateY(20px);
+            transition: .3s;
+        }
+    }
+}
+
+// Recent Project Responsive
+@include media('medium') {
+    .service-filter-items {
+        figure {
+            figcaption {
+                h4 {
+                    margin-bottom: 0;
+                }
+                p {
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+    .service-filter-nav {
+        button {
+            padding: 10px;
+        }
+    }
+}
+
+@include media('small') {
+    .service-filter-items {
+        figure {
+            figcaption {
+                h4 {
+                    margin-bottom: 0;
+                }
+                p {
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+    .service-filter-items {
+        figure {
+            text-align: center;
+        }
+    }
+}
+
+/* =============== Recent Project Responsive// ================ */
+
+/* ===========================================
+            Benifit Block
+==============================================*/
+
+.benifit-block {
+    padding: 100px 0;
+}
+
+.benifit {
+    &.first-row {
+        background: #fff;
+    }
+    &.second-row {
+        padding-top: 100px;
+        background: #f6f6f6;
+    }
+    .title {
+        font-weight: bold;
+        margin-bottom: 1rem;
+    }
+    .sub-title {
+        font-size: 20px;
+        font-weight: 500;
+        margin-bottom: 1.2rem;
+    }
+    .button-primary {
+        margin: 25px 0;
+        &:hover {
+            background: darken($primary, 10%);
+        }
+    }
+    .hvr-icon-forward:before {
+        content: '\f105';
+        margin-left: 10px;
+    }
+}
+
+/* ===========================================
+            Testimonials 
+==============================================*/
+
+.testimonials {
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    &::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: #0f18299e;
+        top: 0;
+        left: 0;
+    }
+}
+
+.test-slider {
+    .item {
+        padding: 100px 0;
+    }
+    .card {
+        border: 0;
+        text-align: center;
+        background: transparent;
+        color: #fff;
+        .blockquote-footer {
+            color: #fff;
+            margin: 25px 0 40px;
+        }
+    }
+    .owl-dots {
+        position: absolute;
+        bottom: 25%;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        justify-content: space-between;
+    }
+    .owl-dots .owl-dot {
+        width: 10px;
+        height: 10px;
+        background: #131c2b;
+        border-radius: 50%;
+        margin: 0 7px;
+        &.active {
+            background: #fff;
+        }
+    }
+}
+
+/* Testimonials Responsive */
+
+@include media('small') {
+    .test-slider {
+        .owl-dots {
+            bottom: 15%;
+        }
+    }
+}
+
+/* ===========================================
+            Latest News 
+==============================================*/
+
+.latest-news {
+    padding: 90px 0;
+}
+
+.latest-news-blocks {
+    .card {
+        border: 0;
+        .card-title {
+            font-weight: bold;
+        }
+        a {
+            font-weight: bold;
+            &:hover {
+                color: $primary;
+            }
+        }
+    }
+    figure {
+        position: relative;
+        width: 100%;
+        figcaption {
+            position: absolute;
+            bottom: 0;
+            padding: 10px 30px;
+            width: 100%;
+            a {
+                color: #fff;
+            }
+        }
+    }
+}
+
+/* Latest News Responsive */
+
+@include media('large') {
+    .latest-news-blocks {
+        figure {
+            figcaption {
+                padding: 10px 10px;
+            }
+        }
+    }
+}
+
+/* ===========================================
+            Template Showcase 
+==============================================*/
+
+.template-showcase {
+    padding: 80px 0;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    .button-primary {
+        &:hover {
+            background: darken($primary, 10%);
+        }
+    }
+    &:before {
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 100%;
+        background: #131c2bd9;
+        left: 0;
+        top: 0;
+    }
+}
+
+/* ============================================
+            Map 
+==============================================*/
+
+.home-map {
+    height: 60vh;
+    width: 100%;
+}
+
+#home_map {
+    width: 100%;
+    height: 100%;
+}

@@ -1,0 +1,18 @@
+//////////// Base ////////////
+@import './base/variables';
+@import './base/mixins';
+//////// Common Style ////////
+@import './default/common';
+/////////// Plugins ////////////
+@import './plugins/slicknav/slicknav';
+@import './plugins/aos/aos';
+///////// Component /////////
+@import './component/component';
+///////// Hover Effect /////////
+@import './hover/hover';
+///////////// Layout /////////////
+@import './layout/header';
+@import './layout/hero';
+@import './layout/footer';
+///////////// page /////////////
+@import './pages/home';

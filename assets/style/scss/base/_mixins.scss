@@ -1,0 +1,55 @@
+//////////////////////////////////////////////////
+////////////////////// Mixins ////////////////////
+//////////////////////////////////////////////////
+/// SCSS Media Quries
+@mixin media($screen) {
+    @if $screen=="mobi" {
+        @media screen and (min-width: 480px) and (max-width: 767px) {
+            @content;
+        }
+    }
+    @if $screen=="small" {
+        @media screen and (max-width: 767px) {
+            @content;
+        }
+    }
+    @if $screen=="medium" {
+        @media screen and (min-width: 768px) and (max-width: 991px) {
+            @content;
+        }
+    }
+    @if $screen=="large" {
+        @media screen and (min-width: 992px) and (max-width: 1199px) {
+            @content;
+        }
+    }
+    @if $screen=="Xlarge" {
+        @media screen and (min-width: 1200px) {
+            @content;
+        }
+    }
+    @if $screen=="menu" {
+        @media screen and (max-width: 992px) {
+            @content;
+        }
+    }
+}
+
+// Transitin
+@mixin transition($dur: 0.3, $del: 0) {
+    transition-duration: $dur;
+    transition-delay: $del;
+}
+
+// Hover Color
+@mixin hoverColor() {
+    &:hover {
+        color: $primary;
+    }
+}
+
+@mixin hoverBg() {
+    &:hover {
+        background-color: $primary;
+    }
+}
