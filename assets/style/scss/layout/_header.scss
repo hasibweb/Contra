@@ -58,6 +58,9 @@
     background: #1c3546a1;
     padding: 20px 0;
     color: #fff;
+    .container {
+        overflow: inherit;
+    }
     .middle-block {
         h4 {
             color: #fff;

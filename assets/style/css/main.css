@@ -1228,6 +1228,8 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
   background: #1c3546a1;
   padding: 20px 0;
   color: #fff; }
+  .header-top .container {
+    overflow: inherit; }
   .header-top .middle-block h4 {
     color: #fff; }
   .header-top .middle-block p {
