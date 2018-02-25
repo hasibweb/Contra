@@ -102,6 +102,10 @@ textarea:focus {
             Common Class / Id
 ================================================*/
 
+.container {
+    overflow: hidden;
+}
+
 .Sticky-nav.sticky {
     position: fixed;
     width: 100%;

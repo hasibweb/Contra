@@ -85,6 +85,9 @@ textarea:focus {
 /* ===============================================
             Common Class / Id
 ================================================*/
+.container {
+  overflow: hidden; }
+
 .Sticky-nav.sticky {
   position: fixed;
   width: 100%;
@@ -1063,6 +1066,27 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
   #search_form {
     right: -70px;
     top: 50px; } }
+/* ============== Video Play Button ================ */
+.video-play-btn {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background: url("../../img/play.png") no-repeat center;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%); }
+  .video-play-btn::before {
+    content: '';
+    position: absolute;
+    width: calc(100% + 20px);
+    height: calc(100% + 20px);
+    top: -10px;
+    left: -10px;
+    background: #fff;
+    opacity: 0.3;
+    border-radius: 50%; }
+
 /*=============================================
                 Hover Effect
 =============================================*/
@@ -1183,7 +1207,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
     color: #fff; }
   .header-top .middle-block p {
     margin-bottom: 0; }
-  .header-top .middle-block .col::before {
+  .header-top .middle-block .block::before {
     content: '\f05d';
     font-family: 'Fontawesome';
     color: #ffa200;
@@ -1223,6 +1247,10 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
     color: #fff !important; }
     .header-menu .menu-list .contact-btn a:hover {
       background: #cc8200; }
+  .header-menu.Sticky-nav.sticky {
+    padding: 13px 0;
+    -webkit-transition: .5s ease;
+    transition: .5s ease; }
 
 /* Responsive Header */
 @media screen and (max-width: 767px) {
@@ -1231,6 +1259,33 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .header-top {
     padding: 10px 0; } }
+/* =============================================
+                Home 2 Header
+===============================================*/
+.home2 .header-top {
+  background: transparent;
+  padding: 0; }
+  .home2 .header-top .header-top-wrap {
+    padding-top: 20px;
+    padding-bottom: 20px; }
+  .home2 .header-top .bdrb {
+    border-bottom: 1px solid #ddddddc4; }
+  .home2 .header-top.Sticky-nav.sticky {
+    background: #1c3546ed;
+    -webkit-transition: .5s ease;
+    transition: .5s ease; }
+.home2 .header-menu {
+  background: transparent; }
+  .home2 .header-menu.Sticky-nav.sticky {
+    background: #e69200;
+    padding: 13px 0;
+    -webkit-transition: .5s ease;
+    transition: .5s ease; }
+  .home2 .header-menu .menu-list a {
+    color: #fff; }
+    .home2 .header-menu .menu-list a:hover {
+      color: #ffa200; }
+
 /*============================================
                     Hero
 =============================================*/
@@ -1365,6 +1420,13 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
     margin: 15px 0 25px; }
   .hero-slider .item .row {
     padding-top: 55px; } }
+/* =============================================
+                Home 2 Hero
+===============================================*/
+.home2.cd-hero .hero-slider .item .overlay {
+  background: #002657;
+  opacity: 0.8; }
+
 /* ============================================
                     Footer 
 ==============================================*/
@@ -1442,29 +1504,6 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
 /*=============================================
                 Home Styles
 =============================================*/
-/* =============== We Provide ================ 
-============================================*/
-.we-provide {
-  padding: 100px 0 50px; }
-
-.provide-first-row {
-  margin-bottom: 90px; }
-  .provide-first-row h2 {
-    font-weight: bold; }
-
-.provide-second-row h4 {
-  font-weight: 500; }
-.provide-second-row .block-img {
-  margin-right: 10px; }
-  .provide-second-row .block-img img {
-    max-width: inherit; }
-
-/* ============ We Provide// ============= */
-@media screen and (max-width: 767px) {
-  .provide-first-row h2 {
-    font-size: 30px;
-    line-height: 42px; } }
-/* ============ We Provide Responsive// ============= */
 /* =============== Our Services ================ 
 ==============================================*/
 .our-services {
@@ -1507,6 +1546,38 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
       right: 4px; }
 
 /* =============== Our Services// ================ */
+/* =============== Home 2 Our Services ================ */
+.home2 .service-cards figure figcaption {
+  background: #ffa200; }
+  .home2 .service-cards figure figcaption a {
+    color: #fff; }
+    .home2 .service-cards figure figcaption a:hover {
+      color: #fff; }
+
+/* =============== Home 2 Our Services// ================ */
+/* =============== We Provide ================ 
+============================================*/
+.we-provide {
+  padding: 100px 0 50px; }
+
+.provide-first-row {
+  margin-bottom: 90px; }
+  .provide-first-row h2 {
+    font-weight: bold; }
+
+.provide-second-row h4 {
+  font-weight: 500; }
+.provide-second-row .block-img {
+  margin-right: 10px; }
+  .provide-second-row .block-img img {
+    max-width: inherit; }
+
+/* ============ We Provide// ============= */
+@media screen and (max-width: 767px) {
+  .provide-first-row h2 {
+    font-size: 30px;
+    line-height: 42px; } }
+/* ============ We Provide Responsive// ============= */
 /* =============== Recent Project ================ 
 ================================================*/
 .recent-project {
@@ -1757,5 +1828,30 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
 #home_map {
   width: 100%;
   height: 100%; }
+
+/*=============================================
+                Home 2 Styles
+=============================================*/
+.home2.our-services {
+  padding-bottom: 0; }
+.home2 .service-cards {
+  padding-bottom: 40px; }
+.home2 .video-block-row {
+  padding: 100px 0;
+  background: #f9f9f9; }
+  .home2 .video-block-row .benifit.first-row {
+    background: transparent; }
+  .home2 .video-block-row .video-popup {
+    display: block;
+    position: relative; }
+    .home2 .video-block-row .video-popup::before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: #ffa200;
+      opacity: 0.8;
+      top: 0;
+      left: 0; }
 
 /*# sourceMappingURL=main.css.map */

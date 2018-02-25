@@ -65,7 +65,7 @@
         p {
             margin-bottom: 0;
         }
-        .col {
+        .block {
             &::before {
                 content: '\f05d';
                 font-family: 'Fontawesome';
@@ -124,6 +124,10 @@
             }
         }
     }
+    &.Sticky-nav.sticky {
+        padding: 13px 0;
+        transition: .5s ease;
+    }
 }
 
 /* Responsive Header */
@@ -137,5 +141,45 @@
 @include media('medium') {
     .header-top {
         padding: 10px 0;
+    }
+}
+
+/* =============================================
+                Home 2 Header
+===============================================*/
+
+.page-header {}
+
+.home2 {
+    .header-top {
+        background: transparent;
+        padding: 0;
+        .header-top-wrap {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        .bdrb {
+            border-bottom: 1px solid #ddddddc4;
+        }
+        &.Sticky-nav.sticky {
+            background: #1c3546ed;
+            transition: .5s ease;
+        }
+    }
+    .header-menu {
+        background: transparent;
+        &.Sticky-nav.sticky {
+            background: darken($primary, 5%);
+            padding: 13px 0;
+            transition: .5s ease;
+        }
+        .menu-list {
+            a {
+                color: #fff;
+                &:hover {
+                    color: $primary;
+                }
+            }
+        }
     }
 }

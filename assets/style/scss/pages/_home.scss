@@ -2,6 +2,9 @@
                 Home Styles
 =============================================*/
 
+///// Imports
+@import '../layout/our-services';
+//////////
 /* =============== We Provide ================ 
 ============================================*/
 
@@ -40,66 +43,6 @@
 }
 
 /* ============ We Provide Responsive// ============= */
-
-/* =============== Our Services ================ 
-==============================================*/
-
-.our-services {
-    padding: 50px 0 80px;
-    .section-heading {
-        margin-bottom: 45px;
-    }
-}
-
-.service-cards {
-    .card {
-        border: 0;
-        &:hover {
-            .card-title {
-                color: $primary;
-            }
-            figcaption {
-                bottom: 0;
-            }
-        }
-        .card-img-top {
-            border-radius: 0;
-        }
-        .card-body {
-            padding: 0;
-            .card-title {
-                margin: 10px 0 10px;
-            }
-        }
-    }
-    figure {
-        position: relative;
-        overflow: hidden;
-        figcaption {
-            position: absolute;
-            bottom: calc(0% - 70px);
-            left: 0;
-            text-align: center;
-            background: #282828;
-            transition: .3s ease-in;
-            width: 100%;
-            padding: 9px 0;
-            color: #fff;
-            a {
-                color: #fff;
-                &:hover {
-                    color: $primary;
-                }
-            }
-            .hvr-icon-forward:before {
-                content: '\f178';
-                right: 4px;
-            }
-        }
-    }
-}
-
-/* =============== Our Services// ================ */
 
 /* =============== Recent Project ================ 
 ================================================*/
