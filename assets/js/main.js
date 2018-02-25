@@ -255,6 +255,7 @@
             e.preventDefault();
         });
 
+        // Hide when click outside
         $(document).on("click", function (e) {
             if (!(e.target.closest('#search_form'))) {
                 $(form).slideUp();
