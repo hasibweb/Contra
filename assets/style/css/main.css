@@ -102,6 +102,8 @@ textarea:focus {
   color: #fff !important;
   padding: 12px 24px;
   display: inline-block; }
+  .button-primary:hover {
+    background: #cc8200; }
 
 #preloader {
   position: fixed;
@@ -1074,8 +1076,10 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
   background: url("../../img/play.png") no-repeat center;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%); }
+  margin-left: -30px;
+  margin-top: -30px;
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out; }
   .video-play-btn::before {
     content: '';
     position: absolute;
@@ -1086,6 +1090,27 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
     background: #fff;
     opacity: 0.3;
     border-radius: 50%; }
+  .video-play-btn:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1); }
+
+/* =========== Accrodian ============= */
+.cd-accordian .card {
+  background: transparent;
+  border-radius: 0; }
+  .cd-accordian .card .card-header {
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 0; }
+    .cd-accordian .card .card-header h6::before {
+      content: '\f056';
+      font-family: 'fontawesome';
+      margin-right: 5px; }
+    .cd-accordian .card .card-header h6.collapsed::before {
+      content: '\f055'; }
+  .cd-accordian .card .card-body {
+    border: 0;
+    background: transparent; }
 
 /*=============================================
                 Hover Effect
@@ -1146,7 +1171,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
   -webkit-transition-duration: 0.1s;
   transition-duration: 0.1s; }
   .hvr-icon-forward:before {
-    content: "\f138";
+    content: '\f105';
     position: absolute;
     right: 1em;
     padding: 0 1px;
@@ -1832,6 +1857,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
 /*=============================================
                 Home 2 Styles
 =============================================*/
+/* ============= Home 2 Our Services */
 .home2.our-services {
   padding-bottom: 0; }
 .home2 .service-cards {
@@ -1853,5 +1879,82 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
       opacity: 0.8;
       top: 0;
       left: 0; }
+
+/* =========== Chose Us ============ */
+.chose-us {
+  padding: 80px 0; }
+  .chose-us .section-heading {
+    margin-bottom: 44px; }
+
+.flat-block figure {
+  padding: 20px;
+  border-radius: 5px;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out; }
+  .flat-block figure .icon {
+    text-align: center;
+    width: 100px;
+    line-height: 100px;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 auto 20px;
+    background: #f6f6f6; }
+  .flat-block figure:hover {
+    background: #ffa200;
+    color: #fff; }
+    .flat-block figure:hover h4,
+    .flat-block figure:hover a,
+    .flat-block figure:hover p {
+      color: #fff; }
+
+/* ============== Frequently ============= */
+.frequently {
+  padding: 70px 0 80px;
+  position: relative;
+  color: #fff; }
+  .frequently h3,
+  .frequently h4,
+  .frequently h5,
+  .frequently h6,
+  .frequently p,
+  .frequently a,
+  .frequently * {
+    color: #fff; }
+  .frequently::before {
+    content: '';
+    width: 50vw;
+    height: 100%;
+    background: #04244c;
+    position: absolute;
+    left: 0;
+    top: 0; }
+  .frequently::after {
+    content: '';
+    width: 50vw;
+    height: 100%;
+    background: url("../../img/21.jpg") no-repeat center;
+    background-size: cover;
+    position: absolute;
+    right: 0;
+    top: 0; }
+
+/* ================ Image Showcase ================ */
+.img-showcase {
+  padding: 100px 0; }
+
+/* ================ Review Blocks ================ */
+.review-blocks {
+  padding: 80px 0 100px;
+  background: #ffa200; }
+  .review-blocks .section-heading > * {
+    color: #fff; }
+
+.review--Block .block {
+  background: #fff;
+  border-radius: 7px;
+  text-align: center;
+  padding: 30px 10px;
+  font-style: italic;
+  font-size: 15px; }
 
 /*# sourceMappingURL=main.css.map */

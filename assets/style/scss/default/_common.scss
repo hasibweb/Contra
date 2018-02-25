@@ -124,6 +124,9 @@ textarea:focus {
     color: #fff !important;
     padding: 12px 24px;
     display: inline-block;
+    &:hover {
+        background: darken($primary, 10%);
+    }
 }
 
 #preloader {

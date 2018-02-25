@@ -44,7 +44,9 @@
     background: url($img + 'play.png') no-repeat center;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    margin-left: -30px;
+    margin-top: -30px;
+    transition: .2s ease-in-out;
     &::before {
         content: '';
         position: absolute;
@@ -55,5 +57,36 @@
         background: #fff;
         opacity: 0.3;
         border-radius: 50%;
+    }
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+/* =========== Accrodian ============= */
+
+.cd-accordian {
+    .card {
+        background: transparent;
+        border-radius: 0;
+        .card-header {
+            background: transparent;
+            border: 1px solid rgba(255, 255, 255, .3);
+            border-radius: 0;
+            h6 {
+                &::before {
+                    content: '\f056';
+                    font-family: 'fontawesome';
+                    margin-right: 5px;
+                }
+                &.collapsed::before {
+                    content: '\f055';
+                }
+            }
+        }
+        .card-body {
+            border: 0;
+            background: transparent;
+        }
     }
 }

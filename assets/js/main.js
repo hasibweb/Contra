@@ -193,7 +193,7 @@
     // ========================== Sticky Header ==========================
 
     function stickyHeader() {
-        var stickyE = $('.Sticky-nav');
+        var stickyE = $('.header-menu.Sticky-nav');
         var stickyH = $('.header-top.Sticky-nav');
 
         // Mobile Menu Sticky
@@ -210,37 +210,38 @@
         stickyNav(stickyE);
         stickyNav(stickyH);
 
-        function stickyNav(sticky) {
-            if (typeof sticky !== "undefined") {
-                var win = $(window),
-                    stickyHeight = sticky.outerHeight();
 
-                // Can't read property 'Console Error Fix'
-                if (sticky.length) {
-                    var stickyOffset = sticky.offset().top;
-                }
-
-                // Controll The Jumping Behavour
-                sticky.wrap('<div class="sticky-wrap"></div>');
-                $('.sticky-wrap').height(stickyHeight);
-
-                // Fixed the position
-                win.on('scroll', function () {
-                    var scrollPos = win.scrollTop();
-
-                    if (scrollPos >= stickyOffset) {
-                        sticky.addClass('sticky');
-                    } else {
-                        sticky.removeClass('sticky');
-                    }
-                })
-
-            }
-        }
 
 
     }
+    // Sticky Nav
+    function stickyNav(sticky) {
+        if (typeof sticky !== "undefined") {
+            var win = $(window),
+                stickyHeight = sticky.outerHeight();
 
+            // Can't read property 'Console Error Fix'
+            if (sticky.length) {
+                var stickyOffset = sticky.offset().top;
+            }
+
+            // Controll The Jumping Behavour
+            sticky.wrap('<div class="sticky-wrap"></div>');
+            $('.sticky-wrap').height(stickyHeight);
+
+            // Fixed the position
+            win.on('scroll', function () {
+                var scrollPos = win.scrollTop();
+
+                if (scrollPos >= stickyOffset) {
+                    sticky.addClass('sticky');
+                } else {
+                    sticky.removeClass('sticky');
+                }
+            })
+
+        }
+    }
 
     // ========================== Search Form ==========================
 
