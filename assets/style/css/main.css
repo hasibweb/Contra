@@ -1908,6 +1908,12 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
     .flat-block figure:hover a,
     .flat-block figure:hover p {
       color: #fff; }
+    .flat-block figure:hover h4 {
+      -webkit-transition: .5s;
+      transition: .5s; }
+    .flat-block figure:hover p {
+      -webkit-transition: .5s;
+      transition: .5s; }
 
 /* ============== Frequently ============= */
 .frequently {
