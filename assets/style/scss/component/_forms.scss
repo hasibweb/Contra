@@ -1,0 +1,51 @@
+/*=============================================
+                Forms Styles
+=============================================*/
+
+/* Request Quote Form */
+
+.request-quote {
+    background: $primary;
+    padding: 20px;
+    border-radius: 4px;
+    h3 {
+        margin-bottom: 30px;
+    }
+    * {
+        color: #fff;
+    }
+    .request-form {
+        input,
+        select {
+            display: block;
+            width: 100%;
+            padding: 12px 15px;
+            border-radius: 4px;
+            margin-bottom: 15px;
+            border: 0;
+        }
+        input[type="submit"] {
+            background: #333c4c;
+        }
+        select {
+            color: #555;
+            appearance: none !important;
+            option {
+                color: #555;
+            }
+        }
+        .select-wrap {
+            position: relative;
+            width: 100%;
+            &:after {
+                content: '\f107';
+                position: absolute;
+                right: 5px;
+                top: 13px;
+                font-family: 'fontawesome';
+                color: #555;
+                font-weight: bold;
+            }
+        }
+    }
+}

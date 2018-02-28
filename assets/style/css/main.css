@@ -1135,6 +1135,47 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
     background: #ffa200;
     color: #fff; }
 
+/*=============================================
+                Forms Styles
+=============================================*/
+/* Request Quote Form */
+.request-quote {
+  background: #ffa200;
+  padding: 20px;
+  border-radius: 4px; }
+  .request-quote h3 {
+    margin-bottom: 30px; }
+  .request-quote * {
+    color: #fff; }
+  .request-quote .request-form input,
+  .request-quote .request-form select {
+    display: block;
+    width: 100%;
+    padding: 12px 15px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    border: 0; }
+  .request-quote .request-form input[type="submit"] {
+    background: #333c4c; }
+  .request-quote .request-form select {
+    color: #555;
+    -webkit-appearance: none !important;
+       -moz-appearance: none !important;
+            appearance: none !important; }
+    .request-quote .request-form select option {
+      color: #555; }
+  .request-quote .request-form .select-wrap {
+    position: relative;
+    width: 100%; }
+    .request-quote .request-form .select-wrap:after {
+      content: '\f107';
+      position: absolute;
+      right: 5px;
+      top: 13px;
+      font-family: 'fontawesome';
+      color: #555;
+      font-weight: bold; }
+
 .xp-timeline {
   padding: 50px 0 100px; }
 
@@ -2187,5 +2228,24 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
       opacity: 1;
       bottom: 0;
       display: inline-block; }
+
+/*=============================================
+                Services Page
+=============================================*/
+/* Services Quote */
+.services-quote {
+  padding: 100px 0; }
+
+/* Accordian */
+.services-accordian .card {
+  margin-bottom: 2px; }
+.services-accordian .card-header {
+  background: #ededed; }
+  .services-accordian .card-header h6::before {
+    content: '\f107';
+    font-family: 'fontawesome';
+    margin-right: 7px; }
+  .services-accordian .card-header h6.collapsed::before {
+    content: '\f105'; }
 
 /*# sourceMappingURL=main.css.map */
