@@ -1348,7 +1348,9 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
   .header-menu.Sticky-nav.sticky {
     padding: 13px 0;
     -webkit-transition: .5s ease;
-    transition: .5s ease; }
+    transition: .5s ease;
+    -webkit-box-shadow: 0 0px 20px 0 #555;
+            box-shadow: 0 0px 20px 0 #555; }
 
 /* Responsive Header */
 @media screen and (max-width: 767px) {
@@ -2185,4 +2187,5 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
       opacity: 1;
       bottom: 0;
       display: inline-block; }
+
 /*# sourceMappingURL=main.css.map */
