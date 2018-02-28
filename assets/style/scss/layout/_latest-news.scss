@@ -1,0 +1,50 @@
+/* ===========================================
+            Latest News 
+==============================================*/
+
+.latest-news {
+    padding: 90px 0;
+    .section-heading {
+        margin-bottom: 40px;
+    }
+}
+
+.latest-news-blocks {
+    .card {
+        border: 0;
+        .card-title {
+            font-weight: bold;
+        }
+        a {
+            font-weight: bold;
+            &:hover {
+                color: $primary;
+            }
+        }
+    }
+    figure {
+        position: relative;
+        width: 100%;
+        figcaption {
+            position: absolute;
+            bottom: 0;
+            padding: 10px 30px;
+            width: 100%;
+            a {
+                color: #fff;
+            }
+        }
+    }
+}
+
+/* Latest News Responsive */
+
+@include media('large') {
+    .latest-news-blocks {
+        figure {
+            figcaption {
+                padding: 10px 10px;
+            }
+        }
+    }
+}

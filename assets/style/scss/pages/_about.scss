@@ -21,7 +21,7 @@
     }
 }
 
-/* ================ Introduce Row ================ */
+/* ================ Our Team ================ */
 
 .our-team {
     padding: 85px 0 60px;
@@ -84,7 +84,7 @@
         .view-btn {
             display: none;
         }
-        /* Hover */
+        /* ===== Hover ===== */
         &:hover {
             // Content
             .content {
@@ -92,13 +92,14 @@
                 width: 100%;
                 top: 60px;
                 left: 0;
-                transition: .3s ease-in-out;
+                transition: all .3s ease-in-out;
                 * {
                     color: #fff !important;
                 }
             }
+            /* Overlay */
             .circle-image::before {
-                opacity: 0.5;
+                opacity: 0.8;
             }
             /* Social Icon */
             .social-icon {
