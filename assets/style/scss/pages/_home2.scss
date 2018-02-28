@@ -34,6 +34,13 @@
     }
 }
 
+// Responsive our Services
+@include media('small') {
+    .video-block-row {
+        padding: 40px 0 70px !important;
+    }
+}
+
 /* =========== Chose Us ============ */
 
 .chose-us {
@@ -75,6 +82,13 @@
     }
 }
 
+// Responsive Flat Block
+@include media('small') {
+    .chose-us {
+        padding: 50px 0;
+    }
+}
+
 /* ============== Frequently ============= */
 
 .frequently {
@@ -111,10 +125,29 @@
     }
 }
 
+// Respinsive Frequently 
+@include media('small') {
+    .frequently {
+        &::before {
+            width: 100vw;
+        }
+        &::after {
+            display: none;
+        }
+    }
+}
+
 /* ================ Image Showcase ================ */
 
 .img-showcase {
     padding: 100px 0;
+}
+
+// Responsive
+@include media('small') {
+    .img-showcase {
+        padding: 70px 0;
+    }
 }
 
 /* ================ Review Blocks ================ */
@@ -137,5 +170,15 @@
         padding: 30px 10px;
         font-style: italic;
         font-size: 15px;
+    }
+}
+
+.review-star {
+    .fa {
+        opacity: 0.7;
+    }
+    .fa-star {
+        color: $primary;
+        opacity: 1;
     }
 }

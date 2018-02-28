@@ -273,7 +273,7 @@
 
     function aosScroll() {
         AOS.init({
-            offset: 80,
+            offset: 50,
             duration: 600
         });
     }

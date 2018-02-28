@@ -1801,6 +1801,8 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
 ==============================================*/
 .latest-news {
   padding: 90px 0; }
+  .latest-news .section-heading {
+    margin-bottom: 40px; }
 
 .latest-news-blocks .card {
   border: 0; }
@@ -1882,6 +1884,9 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
       top: 0;
       left: 0; }
 
+@media screen and (max-width: 767px) {
+  .video-block-row {
+    padding: 40px 0 70px !important; } }
 /* =========== Chose Us ============ */
 .chose-us {
   padding: 80px 0; }
@@ -1915,6 +1920,9 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
       -webkit-transition: .5s;
       transition: .5s; }
 
+@media screen and (max-width: 767px) {
+  .chose-us {
+    padding: 50px 0; } }
 /* ============== Frequently ============= */
 .frequently {
   padding: 70px 0 80px;
@@ -1946,10 +1954,18 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
     right: 0;
     top: 0; }
 
+@media screen and (max-width: 767px) {
+  .frequently::before {
+    width: 100vw; }
+  .frequently::after {
+    display: none; } }
 /* ================ Image Showcase ================ */
 .img-showcase {
   padding: 100px 0; }
 
+@media screen and (max-width: 767px) {
+  .img-showcase {
+    padding: 70px 0; } }
 /* ================ Review Blocks ================ */
 .review-blocks {
   padding: 80px 0 100px;
@@ -1964,5 +1980,11 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
   padding: 30px 10px;
   font-style: italic;
   font-size: 15px; }
+
+.review-star .fa {
+  opacity: 0.7; }
+.review-star .fa-star {
+  color: #ffa200;
+  opacity: 1; }
 
 /*# sourceMappingURL=main.css.map */
