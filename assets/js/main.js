@@ -27,6 +27,7 @@
         testSlider();
         stickyHeader();
         searchForm();
+        imagePopup();
     });
 
     // Window Resize Function
@@ -265,7 +266,7 @@
 
         form.on('submit', function (e) {
             e.preventDefault();
-        })
+        });
 
     }
 
@@ -278,6 +279,15 @@
         });
     }
 
+    // ========================== Image Popup ==========================
+
+    function imagePopup() {
+        $("[data-fancybox]").fancybox({
+            thumbs: {
+                autoStart: true
+            }
+        });
+    }
 
 
 

@@ -1,0 +1,14 @@
+/*=============================================
+                Buttons
+=============================================*/
+
+.view-btn {
+    padding: 10px 25px;
+    color: $primary;
+    border: 2px solid $primary;
+    background: #fff;
+    &:hover {
+        background: $primary;
+        color: #fff;
+    }
+}

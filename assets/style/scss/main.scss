@@ -8,12 +8,15 @@
 @import './plugins/aos/aos';
 ///////// Component /////////
 @import './component/component';
+@import './component/buttons';
 @import './component/timeline';
 ///////// Hover Effect /////////
 @import './hover/hover';
 ///////////// Layout /////////////
 @import './layout/header';
 @import './layout/hero';
+@import './layout/showcase';
+@import './layout/map';
 @import './layout/footer';
 ///////////// page /////////////
 @import './pages/home';

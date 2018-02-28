@@ -1094,6 +1094,17 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
     -webkit-transform: scale(1.1);
             transform: scale(1.1); }
 
+.play-btn-primary {
+  display: inline-block;
+  margin: 25px 0;
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9); }
+  .play-btn-primary:hover {
+    -webkit-transform: scale(1);
+            transform: scale(1); }
+
 /* =========== Accrodian ============= */
 .cd-accordian .card {
   background: transparent;
@@ -1111,6 +1122,18 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
   .cd-accordian .card .card-body {
     border: 0;
     background: transparent; }
+
+/*=============================================
+                Buttons
+=============================================*/
+.view-btn {
+  padding: 10px 25px;
+  color: #ffa200;
+  border: 2px solid #ffa200;
+  background: #fff; }
+  .view-btn:hover {
+    background: #ffa200;
+    color: #fff; }
 
 .xp-timeline {
   padding: 50px 0 100px; }
@@ -1134,7 +1157,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
       position: absolute;
       height: 200%;
       width: 5px;
-      right: calc(100% + 15px);
+      right: calc(100% + 20px);
       top: 0px;
       background: #ededed; }
     .timeline .content:after {
@@ -1144,12 +1167,22 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
       height: 25px;
       background: #fff;
       top: 45px;
-      right: calc(100% + 5px);
+      right: calc(100% + 10px);
       border-radius: 50%;
       border: 5px solid #ededed; }
     .timeline .content:hover::after {
       border-color: #ffa200; }
 
+/* Responsive Timeline */
+@media screen and (max-width: 767px) {
+  .timeline .year {
+    font-size: 24px; }
+  .timeline .content::before {
+    right: calc(100% + 0px); }
+  .timeline .content::after {
+    right: calc(100% + -7px);
+    width: 20px;
+    height: 20px; } }
 /*=============================================
                 Hover Effect
 =============================================*/
@@ -1491,6 +1524,69 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
 .home2.cd-hero .hero-slider .item .overlay {
   background: #002657;
   opacity: 0.8; }
+
+/* =============================================
+                Page Hero
+===============================================*/
+.page-hero {
+  padding: 245px 0 40px;
+  position: relative; }
+  .page-hero::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: #1c3546a1; }
+  .page-hero * {
+    color: #fff; }
+  .page-hero .hero-content {
+    position: relative;
+    z-index: 2; }
+  .page-hero .breadcrumb {
+    background: transparent; }
+    .page-hero .breadcrumb a:hover {
+      color: #ffa200; }
+    .page-hero .breadcrumb .breadcrumb-item.active {
+      color: #fff; }
+    .page-hero .breadcrumb .breadcrumb-item + .breadcrumb-item::before {
+      color: #fff; }
+
+@media screen and (max-width: 767px) {
+  .page-hero {
+    padding-top: 130px;
+    padding-bottom: 25px; } }
+/* ===========================================
+            Template Showcase 
+==============================================*/
+.template-showcase {
+  padding: 80px 0;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover; }
+  .template-showcase .button-primary:hover {
+    background: #cc8200; }
+  .template-showcase:before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: #131c2bd9;
+    left: 0;
+    top: 0; }
+
+/* ============================================
+            Map 
+==============================================*/
+.home-map {
+  height: 60vh;
+  width: 100%; }
+
+#home_map {
+  width: 100%;
+  height: 100%; }
 
 /* ============================================
                     Footer 
@@ -1865,37 +1961,6 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
 @media screen and (min-width: 992px) and (max-width: 1199px) {
   .latest-news-blocks figure figcaption {
     padding: 10px 10px; } }
-/* ===========================================
-            Template Showcase 
-==============================================*/
-.template-showcase {
-  padding: 80px 0;
-  position: relative;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover; }
-  .template-showcase .button-primary:hover {
-    background: #cc8200; }
-  .template-showcase:before {
-    position: absolute;
-    content: '';
-    width: 100%;
-    height: 100%;
-    background: #131c2bd9;
-    left: 0;
-    top: 0; }
-
-/* ============================================
-            Map 
-==============================================*/
-.home-map {
-  height: 60vh;
-  width: 100%; }
-
-#home_map {
-  width: 100%;
-  height: 100%; }
-
 /*=============================================
                 Home 2 Styles
 =============================================*/
@@ -2028,35 +2093,95 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
 /*=============================================
                 About Page
 =============================================*/
-/* =============== Page Hero ============== */
-.page-hero {
-  padding: 245px 0 40px;
-  position: relative; }
-  .page-hero::before {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
-    background: #1c3546a1; }
-  .page-hero * {
-    color: #fff; }
-  .page-hero .hero-content {
-    position: relative;
-    z-index: 2; }
-  .page-hero .breadcrumb {
-    background: transparent; }
-    .page-hero .breadcrumb a:hover {
-      color: #ffa200; }
-    .page-hero .breadcrumb .breadcrumb-item.active {
-      color: #fff; }
-    .page-hero .breadcrumb .breadcrumb-item + .breadcrumb-item::before {
-      color: #fff; }
-
 /* ================ Introduce Row ================ */
 .introduce-row {
   padding: 100px 0 50px; }
   .introduce-row h3 {
     margin-bottom: 30px; }
+
+@media screen and (max-width: 767px) {
+  .introduce-row {
+    padding: 50px 0 15px; }
+    .introduce-row h3 {
+      font-size: 27px; } }
+/* ================ Introduce Row ================ */
+.our-team {
+  padding: 85px 0 60px; }
+
+.team-menmers figure {
+  overflow: hidden;
+  margin-bottom: 0;
+  padding-bottom: 20px;
+  height: 100%;
+  /* Content */
+  /* Social Icon */
+  /* Button */
+  /* Hover */ }
+  .team-menmers figure .circle-image {
+    position: relative;
+    display: inline-block;
+    border-radius: 50%;
+    overflow: hidden;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    margin-bottom: 28px;
+    /* Overlay */ }
+    .team-menmers figure .circle-image::before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      background: #ffa200;
+      opacity: 0;
+      -webkit-transition: .2s ease-in-out;
+      transition: .2s ease-in-out; }
+  .team-menmers figure .content {
+    padding: 7px; }
+    .team-menmers figure .content h4 {
+      color: #ffa200; }
+  .team-menmers figure .social-icon {
+    position: absolute;
+    top: 170px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    opacity: 0;
+    -webkit-transition: .2s ease-in-out;
+    transition: .2s ease-in-out; }
+    .team-menmers figure .social-icon a {
+      width: 35px;
+      line-height: 35px;
+      text-align: center;
+      display: inline-block;
+      color: #fff;
+      border-radius: 50%; }
+      .team-menmers figure .social-icon a:hover {
+        background: #3982ff; }
+  .team-menmers figure .view-btn {
+    display: none; }
+  .team-menmers figure:hover {
+    /* Social Icon */
+    /* Button */ }
+    .team-menmers figure:hover .content {
+      position: absolute;
+      width: 100%;
+      top: 60px;
+      left: 0;
+      -webkit-transition: .3s ease-in-out;
+      transition: .3s ease-in-out; }
+      .team-menmers figure:hover .content * {
+        color: #fff !important; }
+    .team-menmers figure:hover .circle-image::before {
+      opacity: 0.5; }
+    .team-menmers figure:hover .social-icon {
+      opacity: 1;
+      top: 145px;
+      -webkit-transition-delay: .2s;
+              transition-delay: .2s; }
+    .team-menmers figure:hover .view-btn {
+      opacity: 1;
+      bottom: 0;
+      display: inline-block; }
 /*# sourceMappingURL=main.css.map */
