@@ -1757,4 +1757,519 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
           -webkit-transition: 1s;
           transition: 1s; }
 
+/*=============================================
+                All Page
+=============================================*/
+/*=============================================
+                Home Styles
+=============================================*/
+/* =============== Our Services ================ 
+==============================================*/
+.our-services {
+  padding: 50px 0 80px; }
+  .our-services .section-heading {
+    margin-bottom: 45px; }
+
+.service-cards .card {
+  border: 0; }
+  .service-cards .card:hover .card-title {
+    color: #ffa200; }
+  .service-cards .card:hover figcaption {
+    bottom: 0; }
+  .service-cards .card .card-img-top {
+    border-radius: 0; }
+  .service-cards .card .card-body {
+    padding: 0; }
+    .service-cards .card .card-body .card-title {
+      margin: 10px 0 10px; }
+.service-cards figure {
+  position: relative;
+  overflow: hidden; }
+  .service-cards figure figcaption {
+    position: absolute;
+    bottom: calc(0% - 70px);
+    left: 0;
+    text-align: center;
+    background: #282828;
+    -webkit-transition: .3s ease-in;
+    transition: .3s ease-in;
+    width: 100%;
+    padding: 9px 0;
+    color: #fff; }
+    .service-cards figure figcaption a {
+      color: #fff; }
+      .service-cards figure figcaption a:hover {
+        color: #ffa200; }
+    .service-cards figure figcaption .hvr-icon-forward:before {
+      content: '\f178';
+      right: 4px; }
+
+/* =============== Our Services// ================ */
+/* =============== Home 2 Our Services ================ */
+.home2 .service-cards figure figcaption {
+  background: #ffa200; }
+  .home2 .service-cards figure figcaption a {
+    color: #fff; }
+    .home2 .service-cards figure figcaption a:hover {
+      color: #fff; }
+
+/* =============== Home 2 Our Services// ================ */
+/* =============== We Provide ================ 
+============================================*/
+.we-provide {
+  padding: 100px 0 50px; }
+
+.provide-first-row {
+  margin-bottom: 90px; }
+  .provide-first-row h2 {
+    font-weight: bold; }
+
+.provide-second-row h4 {
+  font-weight: 500; }
+.provide-second-row .block-img {
+  margin-right: 10px; }
+  .provide-second-row .block-img img {
+    max-width: inherit; }
+
+/* ============ We Provide// ============= */
+@media screen and (max-width: 767px) {
+  .provide-first-row h2 {
+    font-size: 30px;
+    line-height: 42px; } }
+/* ============ We Provide Responsive// ============= */
+/* =============== Recent Project ================ 
+================================================*/
+.recent-project {
+  padding: 80px 0 40px;
+  background: #101a2c;
+  color: #fff; }
+  .recent-project .section-heading h3 {
+    color: #fff; }
+
+.service-filter-nav button {
+  background: transparent;
+  color: #fff;
+  padding: 10px 20px; }
+  .service-filter-nav button.active {
+    color: #ffa200;
+    text-decoration: underline; }
+  .service-filter-nav button:hover {
+    color: #ffa200;
+    text-decoration: underline; }
+
+.service-filter-items figure {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 30px; }
+  .service-filter-items figure:hover > img {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+    -webkit-transition: 10s ease;
+    transition: 10s ease; }
+  .service-filter-items figure:hover .overlay {
+    opacity: 1; }
+  .service-filter-items figure:hover figcaption {
+    opacity: 1; }
+    .service-filter-items figure:hover figcaption h4 {
+      -webkit-transform: translateY(0);
+              transform: translateY(0); }
+    .service-filter-items figure:hover figcaption p {
+      -webkit-transform: translateY(0);
+              transform: translateY(0); }
+  .service-filter-items figure .overlay {
+    position: absolute;
+    width: calc(100% + 200px);
+    height: calc(100% + 200px);
+    left: -100px;
+    top: -100px;
+    background: #222f44cc;
+    opacity: 0;
+    -webkit-transition-duration: 0.3;
+            transition-duration: 0.3;
+    -webkit-transition-delay: 0;
+            transition-delay: 0;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out; }
+.service-filter-items figcaption {
+  z-index: 8;
+  position: absolute;
+  top: 8%;
+  left: 6%;
+  bottom: 8%;
+  right: 6%;
+  text-align: center;
+  opacity: 0;
+  border: 1px dashed #fff;
+  padding: 10px;
+  background: transparent;
+  -webkit-transition-duration: 0.3;
+          transition-duration: 0.3;
+  -webkit-transition-delay: 0;
+          transition-delay: 0; }
+  .service-filter-items figcaption .caption-inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 100%; }
+  .service-filter-items figcaption h4 {
+    color: #fff;
+    -webkit-transform: translateY(-20px);
+            transform: translateY(-20px);
+    -webkit-transition: .3s;
+    transition: .3s; }
+  .service-filter-items figcaption p {
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+    -webkit-transition: .3s;
+    transition: .3s; }
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .service-filter-items figure figcaption h4 {
+    margin-bottom: 0; }
+  .service-filter-items figure figcaption p {
+    font-size: 15px; }
+
+  .service-filter-nav button {
+    padding: 10px; } }
+@media screen and (max-width: 767px) {
+  .service-filter-items figure figcaption h4 {
+    margin-bottom: 0; }
+  .service-filter-items figure figcaption p {
+    font-size: 15px; }
+
+  .service-filter-items figure {
+    text-align: center; } }
+/* =============== Recent Project Responsive// ================ */
+/* ===========================================
+            Benifit Block
+==============================================*/
+.benifit-block {
+  padding: 100px 0; }
+
+.benifit.first-row {
+  background: #fff; }
+.benifit.second-row {
+  padding-top: 100px;
+  background: #f6f6f6; }
+.benifit .title {
+  font-weight: bold;
+  margin-bottom: 1rem; }
+.benifit .sub-title {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 1.2rem; }
+.benifit .button-primary {
+  margin: 25px 0; }
+  .benifit .button-primary:hover {
+    background: #cc8200; }
+.benifit .hvr-icon-forward:before {
+  content: '\f105';
+  margin-left: 10px; }
+
+/* ===========================================
+            Testimonials 
+==============================================*/
+.testimonials {
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover; }
+  .testimonials::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #0f18299e;
+    top: 0;
+    left: 0; }
+
+.test-slider .item {
+  padding: 100px 0; }
+.test-slider .card {
+  border: 0;
+  text-align: center;
+  background: transparent;
+  color: #fff; }
+  .test-slider .card .blockquote-footer {
+    color: #fff;
+    margin: 25px 0 40px; }
+.test-slider .owl-dots {
+  position: absolute;
+  bottom: 25%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+.test-slider .owl-dots .owl-dot {
+  width: 10px;
+  height: 10px;
+  background: #131c2b;
+  border-radius: 50%;
+  margin: 0 7px; }
+  .test-slider .owl-dots .owl-dot.active {
+    background: #fff; }
+
+/* Testimonials Responsive */
+@media screen and (max-width: 767px) {
+  .test-slider .owl-dots {
+    bottom: 15%; } }
+/*=============================================
+                Home 2 Styles
+=============================================*/
+/* ============= Home 2 Our Services */
+.home2.our-services {
+  padding-bottom: 0; }
+.home2 .service-cards {
+  padding-bottom: 40px; }
+.home2 .video-block-row {
+  padding: 100px 0;
+  background: #f9f9f9; }
+  .home2 .video-block-row .benifit.first-row {
+    background: transparent; }
+  .home2 .video-block-row .video-popup {
+    display: block;
+    position: relative; }
+    .home2 .video-block-row .video-popup::before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: #ffa200;
+      opacity: 0.8;
+      top: 0;
+      left: 0; }
+
+@media screen and (max-width: 767px) {
+  .video-block-row {
+    padding: 40px 0 70px !important; } }
+/* =========== Chose Us ============ */
+.chose-us {
+  padding: 80px 0; }
+  .chose-us .section-heading {
+    margin-bottom: 44px; }
+
+.flat-block figure {
+  padding: 20px;
+  border-radius: 5px;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out; }
+  .flat-block figure .icon {
+    text-align: center;
+    width: 100px;
+    line-height: 100px;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 auto 20px;
+    background: #f6f6f6; }
+  .flat-block figure:hover {
+    background: #ffa200;
+    color: #fff; }
+    .flat-block figure:hover h4,
+    .flat-block figure:hover a,
+    .flat-block figure:hover p {
+      color: #fff; }
+    .flat-block figure:hover h4 {
+      -webkit-transition: .5s;
+      transition: .5s; }
+    .flat-block figure:hover p {
+      -webkit-transition: .5s;
+      transition: .5s; }
+
+@media screen and (max-width: 767px) {
+  .chose-us {
+    padding: 50px 0; } }
+/* ============== Frequently ============= */
+.frequently {
+  padding: 70px 0 80px;
+  position: relative;
+  color: #fff; }
+  .frequently h3,
+  .frequently h4,
+  .frequently h5,
+  .frequently h6,
+  .frequently p,
+  .frequently a,
+  .frequently * {
+    color: #fff; }
+  .frequently::before {
+    content: '';
+    width: 50vw;
+    height: 100%;
+    background: #04244c;
+    position: absolute;
+    left: 0;
+    top: 0; }
+  .frequently::after {
+    content: '';
+    width: 50vw;
+    height: 100%;
+    background: url("../../img/21.jpg") no-repeat center;
+    background-size: cover;
+    position: absolute;
+    right: 0;
+    top: 0; }
+
+@media screen and (max-width: 767px) {
+  .frequently::before {
+    width: 100vw; }
+  .frequently::after {
+    display: none; } }
+/* ================ Image Showcase ================ */
+.img-showcase {
+  padding: 100px 0; }
+
+@media screen and (max-width: 767px) {
+  .img-showcase {
+    padding: 70px 0; } }
+/* ================ Review Blocks ================ */
+.review-blocks {
+  padding: 80px 0 100px;
+  background: #ffa200; }
+  .review-blocks .section-heading > * {
+    color: #fff; }
+
+.review--Block .block {
+  background: #fff;
+  border-radius: 7px;
+  text-align: center;
+  padding: 30px 10px;
+  font-style: italic;
+  font-size: 15px; }
+
+.review-star .fa {
+  opacity: 0.7; }
+.review-star .fa-star {
+  color: #ffa200;
+  opacity: 1; }
+
+/*=============================================
+                About Page
+=============================================*/
+/* ================ Introduce Row ================ */
+.introduce-row {
+  padding: 100px 0 50px; }
+  .introduce-row h3 {
+    margin-bottom: 30px; }
+
+@media screen and (max-width: 767px) {
+  .introduce-row {
+    padding: 50px 0 15px; }
+    .introduce-row h3 {
+      font-size: 27px; } }
+/* ================ Our Team ================ */
+.our-team {
+  padding: 85px 0 60px; }
+
+.team-menmers figure {
+  overflow: hidden;
+  margin-bottom: 0;
+  padding-bottom: 20px;
+  height: 100%;
+  /* Content */
+  /* Social Icon */
+  /* Button */
+  /* ===== Hover ===== */ }
+  .team-menmers figure .circle-image {
+    position: relative;
+    display: inline-block;
+    border-radius: 50%;
+    overflow: hidden;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    margin-bottom: 28px;
+    /* Overlay */ }
+    .team-menmers figure .circle-image::before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      background: #ffa200;
+      opacity: 0;
+      -webkit-transition: .2s ease-in-out;
+      transition: .2s ease-in-out; }
+  .team-menmers figure .content {
+    padding: 7px; }
+    .team-menmers figure .content h4 {
+      color: #ffa200; }
+  .team-menmers figure .social-icon {
+    position: absolute;
+    top: 170px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    opacity: 0;
+    -webkit-transition: .2s ease-in-out;
+    transition: .2s ease-in-out; }
+    .team-menmers figure .social-icon a {
+      width: 35px;
+      line-height: 35px;
+      text-align: center;
+      display: inline-block;
+      color: #fff;
+      border-radius: 50%; }
+      .team-menmers figure .social-icon a:hover {
+        background: #3982ff; }
+  .team-menmers figure .view-btn {
+    display: none; }
+  .team-menmers figure:hover {
+    /* Overlay */
+    /* Social Icon */
+    /* Button */ }
+    .team-menmers figure:hover .content {
+      position: absolute;
+      width: 100%;
+      top: 60px;
+      left: 0;
+      -webkit-transition: all .3s ease-in-out;
+      transition: all .3s ease-in-out; }
+      .team-menmers figure:hover .content * {
+        color: #fff !important; }
+    .team-menmers figure:hover .circle-image::before {
+      opacity: 0.8; }
+    .team-menmers figure:hover .social-icon {
+      opacity: 1;
+      top: 145px;
+      -webkit-transition-delay: .2s;
+              transition-delay: .2s; }
+    .team-menmers figure:hover .view-btn {
+      opacity: 1;
+      bottom: 0;
+      display: inline-block; }
+
+/*=============================================
+                Services Page
+=============================================*/
+/* Services Quote */
+.services-quote {
+  padding: 100px 0; }
+
+/* Responsive Services */
+@media screen and (max-width: 767px) {
+  .services-page .services-quote {
+    padding: 50px 0; }
+  .services-page .latest-news {
+    padding: 50px 0; } }
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .services-page .services-quote {
+    padding: 50px 0; }
+  .services-page .latest-news {
+    padding: 50px 0; } }
+
 /*# sourceMappingURL=main.css.map */
