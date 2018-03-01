@@ -12,3 +12,43 @@
         color: #fff;
     }
 }
+
+/* ============== Video Play Button ================ */
+
+.video-play-btn {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background: url($img + 'play.png') no-repeat center;
+    top: 50%;
+    left: 50%;
+    margin-left: -30px;
+    margin-top: -30px;
+    transition: .2s ease-in-out;
+    &::before {
+        content: '';
+        position: absolute;
+        width: calc(100% + 20px);
+        height: calc(100% + 20px);
+        top: -10px;
+        left: -10px;
+        background: #fff;
+        opacity: 0.3;
+        border-radius: 50%;
+    }
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+// Play Button Primary
+.play-btn-primary {
+    // background: url($img + 'play-btn.png') no-repeat center;
+    display: inline-block;
+    margin: 25px 0;
+    transition: .2s ease-in-out;
+    transform: scale(0.9);
+    &:hover {
+        transform: scale(1);
+    }
+}

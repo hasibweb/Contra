@@ -8,20 +8,9 @@
 @import './plugins/aos/aos';
 ///////// Component /////////
 @import './component/component';
-@import './component/buttons';
-@import './component/forms';
-@import './component/timeline';
 ///////// Hover Effect /////////
 @import './hover/hover';
 ///////////// Layout /////////////
-@import './layout/header';
-@import './layout/hero';
-@import './layout/latest-news';
-@import './layout/showcase';
-@import './layout/map';
-@import './layout/footer';
+@import './layout/layout';
 ///////////// page /////////////
-@import './pages/home';
-@import './pages/home2';
-@import './pages/about';
-@import './pages/services';
+@import './pages/pages';

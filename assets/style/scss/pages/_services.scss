@@ -8,29 +8,6 @@
     padding: 100px 0;
 }
 
-/* Accordian */
-
-.services-accordian {
-    .card {
-        margin-bottom: 2px;
-    }
-    .card-header {
-        background: #ededed;
-        h6 {
-            &::before {
-                content: '\f107';
-                font-family: 'fontawesome';
-                margin-right: 7px;
-            }
-            &.collapsed {
-                &::before {
-                    content: '\f105';
-                }
-            }
-        }
-    }
-}
-
 /* Responsive Services */
 
 @include media('small') {

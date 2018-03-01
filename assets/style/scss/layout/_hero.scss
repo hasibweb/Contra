@@ -212,6 +212,9 @@
 .page-hero {
     padding: 245px 0 40px;
     position: relative;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
     &::before {
         content: '';
         position: absolute;

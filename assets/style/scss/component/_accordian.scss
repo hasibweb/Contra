@@ -1,0 +1,50 @@
+/* =========== FAQ Accrodian ============= */
+
+.cd-accordian {
+    .card {
+        background: transparent;
+        border-radius: 0;
+        .card-header {
+            background: transparent;
+            border: 1px solid rgba(255, 255, 255, .3);
+            border-radius: 0;
+            h6 {
+                &::before {
+                    content: '\f056';
+                    font-family: 'fontawesome';
+                    margin-right: 5px;
+                }
+                &.collapsed::before {
+                    content: '\f055';
+                }
+            }
+        }
+        .card-body {
+            border: 0;
+            background: transparent;
+        }
+    }
+}
+
+/* =========== Services Accordian ============= */
+
+.services-accordian {
+    .card {
+        margin-bottom: 2px;
+    }
+    .card-header {
+        background: #ededed;
+        h6 {
+            &::before {
+                content: '\f107';
+                font-family: 'fontawesome';
+                margin-right: 7px;
+            }
+            &.collapsed {
+                &::before {
+                    content: '\f105';
+                }
+            }
+        }
+    }
+}
