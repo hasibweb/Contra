@@ -2298,13 +2298,8 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
     left: 0;
     background: #ffa200;
     opacity: 0.9; }
-  .project-video .project-youtube-video {
+  .project-video .video-image {
     position: relative; }
-    .project-video .project-youtube-video iframe {
-      border: 20px solid #fff;
-      margin: 0 auto;
-      display: block;
-      max-width: 100%; }
 
 @media screen and (max-width: 767px) {
   .project-youtube-video iframe {
@@ -2314,4 +2309,5 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
   .project-youtube-video iframe {
     height: auto;
     border-width: 10px !important; } }
+
 /*# sourceMappingURL=main.css.map */

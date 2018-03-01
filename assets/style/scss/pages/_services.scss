@@ -59,14 +59,8 @@
         background: $primary;
         opacity: 0.9;
     }
-    .project-youtube-video {
+    .video-image {
         position: relative;
-        iframe {
-            border: 20px solid #fff;
-            margin: 0 auto;
-            display: block;
-            max-width: 100%;
-        }
     }
 }
 
