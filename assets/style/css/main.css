@@ -2448,5 +2448,25 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
     top: 15px; }
   .success-story .filter-item:hover .fig-details {
     bottom: 15px; } }
+/*=============================================
+                Projects
+=============================================*/
+.blogs-grid {
+  padding: 50px 0;
+  background: #f9f9f9; }
+
+.blogs-wrap .card {
+  background: #fff;
+  border: 0; }
+  .blogs-wrap .card .card-body {
+    border: 1px dashed #ddd; }
+  .blogs-wrap .card .blog-control li {
+    margin-right: 18px; }
+    .blogs-wrap .card .blog-control li i {
+      display: inline-block;
+      margin-right: 5px; }
+    .blogs-wrap .card .blog-control li:hover {
+      color: #ffa200;
+      cursor: pointer; }
 
 /*# sourceMappingURL=main.css.map */
