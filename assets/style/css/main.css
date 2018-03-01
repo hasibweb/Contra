@@ -78,32 +78,21 @@ button:focus {
 input {
   border: 1px solid #ffa200; }
 
+input[type="submit"] {
+  cursor: pointer; }
+
 input:focus,
 textarea:focus {
   outline: 0; }
 
+section {
+  overflow: hidden; }
+
 /* ===============================================
             Common Class / Id
 ================================================*/
-.container {
-  overflow: hidden; }
-
-.Sticky-nav.sticky {
-  position: fixed;
-  width: 100%;
-  top: 0;
-  left: 0; }
-
 .section-heading h3 {
   font-weight: bold; }
-
-.button-primary {
-  background: #ffa200;
-  color: #fff !important;
-  padding: 12px 24px;
-  display: inline-block; }
-  .button-primary:hover {
-    background: #cc8200; }
 
 #preloader {
   position: fixed;
@@ -1046,6 +1035,14 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
 /*=============================================
                 Buttons
 =============================================*/
+.button-primary {
+  background: #ffa200;
+  color: #fff !important;
+  padding: 12px 24px;
+  display: inline-block; }
+  .button-primary:hover {
+    background: #cc8200; }
+
 .view-btn {
   padding: 10px 25px;
   color: #ffa200;
@@ -1410,6 +1407,12 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
     transition: .5s ease;
     -webkit-box-shadow: 0 0px 20px 0 #555;
             box-shadow: 0 0px 20px 0 #555; }
+
+.Sticky-nav.sticky {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0; }
 
 /* Responsive Header */
 @media screen and (max-width: 767px) {
@@ -2140,6 +2143,8 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
 .review-blocks {
   padding: 80px 0 100px;
   background: #ffa200; }
+  .review-blocks .container {
+    overflow-y: hidden; }
   .review-blocks .section-heading > * {
     color: #fff; }
 
@@ -2256,7 +2261,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
 /*=============================================
                 Services Page
 =============================================*/
-/* Services Quote */
+/* =========== Services Quote =========== */
 .services-quote {
   padding: 100px 0; }
 
@@ -2271,5 +2276,26 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
     padding: 50px 0; }
   .services-page .latest-news {
     padding: 50px 0; } }
-
+/* =========== Project Video =========== */
+.project-video {
+  padding: 70px 0;
+  position: relative; }
+  .project-video * {
+    color: #fff; }
+  .project-video::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #ffa200;
+    opacity: 0.9; }
+  .project-video .project-youtube-video {
+    position: relative; }
+    .project-video .project-youtube-video iframe {
+      border: 20px solid #fff;
+      margin: 0 auto;
+      display: block;
+      max-width: 100%; }
 /*# sourceMappingURL=main.css.map */

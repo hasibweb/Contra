@@ -93,39 +93,26 @@ input {
     border: 1px solid $primary;
 }
 
+input[type="submit"] {
+    cursor: pointer;
+}
+
 input:focus,
 textarea:focus {
     outline: 0;
+}
+
+section {
+    overflow: hidden;
 }
 
 /* ===============================================
             Common Class / Id
 ================================================*/
 
-.container {
-    overflow: hidden;
-}
-
-.Sticky-nav.sticky {
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-}
-
 .section-heading {
     h3 {
         font-weight: bold;
-    }
-}
-
-.button-primary {
-    background: $primary;
-    color: #fff !important;
-    padding: 12px 24px;
-    display: inline-block;
-    &:hover {
-        background: darken($primary, 10%);
     }
 }
 

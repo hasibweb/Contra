@@ -134,6 +134,14 @@
     }
 }
 
+// Sticky Nav Fixed
+.Sticky-nav.sticky {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
 /* Responsive Header */
 
 @include media('small') {

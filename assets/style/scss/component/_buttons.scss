@@ -2,6 +2,18 @@
                 Buttons
 =============================================*/
 
+// Primary Button
+.button-primary {
+    background: $primary;
+    color: #fff !important;
+    padding: 12px 24px;
+    display: inline-block;
+    &:hover {
+        background: darken($primary, 10%);
+    }
+}
+
+// View Button
 .view-btn {
     padding: 10px 25px;
     color: $primary;
