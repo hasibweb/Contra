@@ -64,3 +64,36 @@
         transform: scale(1);
     }
 }
+
+/* Pagination */
+
+.blogs-grid {
+    .page-navigation {
+        .page-item {
+            &.active .page-link {
+                color: #a8d128;
+                background: transparent;
+                font-weight: bold;
+            }
+            .page-link {
+                color: #666;
+                border: 0;
+                box-shadow: 0px 2px 2px 0px #ddd;
+                padding: .7rem 1.2rem;
+                margin: 0;
+                &:hover {
+                    background: $primary;
+                    color: #fff;
+                }
+            }
+            &:first-child .page-link {
+                border-top-left-radius: 1.25rem;
+                border-bottom-left-radius: 1.25rem;
+            }
+            &:last-child .page-link {
+                border-top-right-radius: 1.25rem;
+                border-bottom-right-radius: 1.25rem;
+            }
+        }
+    }
+}

@@ -31,7 +31,10 @@
     ul {
         line-height: 30px;
         i {
-            transition: .2s ease;
+            transition: .3s ease;
+        }
+        li {
+            transition: all .3s ease;
         }
     }
     /* Links */
