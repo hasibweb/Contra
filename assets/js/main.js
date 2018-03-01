@@ -28,6 +28,7 @@
         stickyHeader();
         searchForm();
         imagePopup();
+        servicesGridFilter();
     });
 
     // Window Resize Function
@@ -289,6 +290,25 @@
         });
     }
 
+    // ========================== Services Grid Filter ==========================
+    function servicesGridFilter() {
+        // init Isotope
+        var $grid = $('.success-story .filter-menu-items');
+
+        $grid.isotope({
+            // options
+        });
+        // filter items on button click
+        $('.success-story .filter-button-group').on('click', 'button', function () {
+            var filterValue = $(this).attr('data-filter');
+            $grid.isotope({
+                filter: filterValue
+            });
+
+            // Active
+            $(this).addClass('active').siblings().removeClass('active');
+        });
+    }
 
 
 
