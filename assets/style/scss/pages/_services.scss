@@ -30,3 +30,27 @@
         }
     }
 }
+
+/* Responsive Services */
+
+@include media('small') {
+    .services-page {
+        .services-quote {
+            padding: 50px 0;
+        }
+        .latest-news {
+            padding: 50px 0;
+        }
+    }
+}
+
+@include media('medium') {
+    .services-page {
+        .services-quote {
+            padding: 50px 0;
+        }
+        .latest-news {
+            padding: 50px 0;
+        }
+    }
+}
