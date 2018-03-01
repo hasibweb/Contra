@@ -18,6 +18,9 @@
         .latest-news {
             padding: 50px 0;
         }
+        .our-services {
+            padding: 50px 0;
+        }
     }
 }
 
@@ -29,6 +32,9 @@
         .latest-news {
             padding: 50px 0;
         }
+        .our-services {
+            padding: 50px 0;
+        }
     }
 }
 
@@ -37,6 +43,9 @@
 .project-video {
     padding: 70px 0;
     position: relative;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
     * {
         color: #fff;
     }
@@ -57,6 +66,26 @@
             margin: 0 auto;
             display: block;
             max-width: 100%;
+        }
+    }
+}
+
+// Responsive video
+@include media('small') {
+    .project-youtube-video {
+        iframe {
+            height: auto;
+            border-width: 10px !important;
+        }
+    }
+}
+
+// Responsive video
+@include media('medium') {
+    .project-youtube-video {
+        iframe {
+            height: auto;
+            border-width: 10px !important;
         }
     }
 }
