@@ -2354,6 +2354,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
   .success-story .filter-item {
     position: relative;
     overflow: hidden;
+    margin-bottom: 30px;
     /* ======= Hover ======= */ }
     .success-story .filter-item > img {
       -webkit-transform: scale(1.1);
