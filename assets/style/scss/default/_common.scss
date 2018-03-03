@@ -110,6 +110,10 @@ section {
             Common Class / Id
 ================================================*/
 
+.text-primary {
+    color: $primary !important;
+}
+
 .section-heading {
     h3 {
         font-weight: bold;

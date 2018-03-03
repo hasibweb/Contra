@@ -1,0 +1,34 @@
+/*=============================================
+                Blog Image Icon Hover
+=============================================*/
+
+.blog-image {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Message and comment control */
+
+.blog-control {
+    li {
+        margin-right: 18px;
+        i {
+            display: inline-block;
+            margin-right: 5px;
+        }
+        &:hover {
+            color: $primary;
+            cursor: pointer;
+        }
+    }
+}
+
+/* Responsive Blog Control */
+
+@include media('small') {
+    .blog-control {
+        li {
+            text-align: center;
+        }
+    }
+}

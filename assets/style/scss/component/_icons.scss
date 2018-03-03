@@ -1,0 +1,61 @@
+/*=============================================
+                Icons
+=============================================*/
+
+// Love Icon
+.love-icon {
+    .fa-heart {
+        color: #d8d8d8;
+        font-size: 25px;
+        cursor: pointer;
+        &.liked {
+            color: $primary !important;
+        }
+    }
+}
+
+// Icon Group
+.icon-group {
+    position: absolute;
+    right: calc(0px - 50px);
+    bottom: 30px;
+    transition: all .3s ease-in;
+    .fa {
+        width: 40px;
+        line-height: 40px;
+        text-align: center;
+        display: inline-block;
+        color: #fff;
+        &:hover {
+            transform: scale(1.1);
+            transition: .2s ease-in-out;
+            border-radius: 10px;
+            z-index: 2;
+        }
+    }
+    .fa-twitter {
+        background: #55acee;
+    }
+    .fa-facebook {
+        background: #4a7deb;
+    }
+    .fa-google-plus {
+        background: #dd4b39;
+    }
+    .fa-instagram {
+        background: #f15a76;
+    }
+}
+
+// Responsive Icon Group
+@include media('small') {
+    .icon-group {
+        position: initial;
+        display: flex;
+        margin: 15px 0;
+        justify-content: center;
+        li {
+            margin-right: 5px;
+        }
+    }
+}

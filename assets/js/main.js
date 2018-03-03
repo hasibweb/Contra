@@ -29,6 +29,7 @@
         searchForm();
         imagePopup();
         servicesGridFilter();
+        classActivation();
     });
 
     // Window Resize Function
@@ -309,6 +310,16 @@
             $(this).addClass('active').siblings().removeClass('active');
         });
     }
+
+    // ========================== Class Activation ==========================
+
+    function classActivation() {
+        $('.love-icon .fa-heart').on('click', function () {
+            $(this).toggleClass('liked');
+
+        });
+    }
+
 
 
 

@@ -85,3 +85,29 @@
         }
     }
 }
+
+/* Comment From */
+
+.comment-form {
+    padding: 25px 0;
+    input,
+    textarea,
+    button {
+        border-radius: 5px;
+        background: #f4f4f4;
+        padding: 15px 20px;
+        margin-bottom: 22px;
+        border: 0;
+        width: 100%;
+        display: block;
+    }
+    textarea {
+        resize: none;
+        height: 130px;
+    }
+    button {
+        background: $primary;
+        color: #fff;
+        margin-bottom: 0;
+    }
+}

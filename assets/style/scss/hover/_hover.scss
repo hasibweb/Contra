@@ -487,12 +487,13 @@
 // 	}
 // }
 // /* ICONS */
-// @import "effects/icons/icon-back";
-// @if $includeClasses {
-// 	.#{$nameSpace}-icon-back {
-// 		@include icon-back();
-// 	}
-// }
+@import "effects/icons/icon-back";
+@if $includeClasses {
+    .#{$nameSpace}-icon-back {
+        @include icon-back();
+    }
+}
+
 @import "effects/icons/icon-forward";
 @if $includeClasses {
     .#{$nameSpace}-icon-forward {

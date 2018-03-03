@@ -222,7 +222,7 @@
         height: 100%;
         left: 0;
         top: 0;
-        background: #1c3546a1;
+        background: #1c3546d1;
     }
     * {
         color: #fff;
@@ -251,6 +251,13 @@
 @include media('small') {
     .page-hero {
         padding-top: 130px;
+        padding-bottom: 25px;
+    }
+}
+
+@include media('medium') {
+    .page-hero {
+        padding-top: 160px;
         padding-bottom: 25px;
     }
 }

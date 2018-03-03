@@ -1,0 +1,109 @@
+/* Sidebar Widget */
+
+#widget-form {
+    input {
+        padding: 12px 15px;
+        width: 100%;
+        background: #f4f4f4;
+        border-color: #ddd;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+    }
+    button {
+        padding: 12px 35px;
+        background: $primary;
+        color: #fff;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        font-size: 18px;
+    }
+}
+
+.sidebar-widget {
+    margin-bottom: 30px;
+    /* Title */
+    .widget-title {
+        margin-bottom: 25px;
+        text-transform: uppercase;
+    }
+    /* Recent Post */
+    &.recent {
+        .hz-card {
+            li {
+                h5 {
+                    transition: all .1s ease-in;
+                }
+                &:hover {
+                    * {
+                        color: $text;
+                    }
+                    h5 {
+                        color: $primary;
+                    }
+                }
+            }
+        }
+    }
+    /* Sidebar Catagory List */
+    &.categorys {
+        .widget-title {
+            margin-bottom: 10px;
+        }
+    } // Catagory List
+    .sidebar-cat-list {
+        li {
+            padding: 13px 5px;
+            transition: all .1s ease-in;
+            &:not(:last-child) {
+                border-bottom: 1px dashed #ddd;
+            }
+            &:hover {
+                color: $primary;
+            }
+        }
+    }
+    /* Horizantaly card */
+    .hz-card {
+        li {
+            margin-bottom: 15px;
+        }
+        span {
+            display: inline-block;
+        }
+        h5 {
+            margin-bottom: 2px;
+            font-weight: bold;
+            line-height: 22px;
+        }
+        .list-image {
+            margin-right: 15px;
+        }
+    } // Archide Dropdown
+    &.archived {
+        .dropdown-toggle {
+            width: 100%;
+            background: #f4f4f4;
+            border: 1px solid #ddd;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    } // Tags
+    &.tags {
+        .tag-list {
+            li {
+                padding: 10px 20px;
+                background: #f4f4f4;
+                border: 1px solid #ddd;
+                border-radius: 5px;
+                margin-bottom: 10px;
+                margin-right: 10px;
+                &:hover {
+                    color: $primary;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
