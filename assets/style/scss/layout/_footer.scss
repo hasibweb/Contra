@@ -72,30 +72,4 @@
         margin-bottom: 20px;
         display: block;
     }
-    /* Icon Group */
-    .icon-group {
-        padding-top: 10px;
-        li {
-            &:not(:last-child) {
-                margin-right: 10px;
-            }
-        }
-        a {
-            line-height: 35px;
-            width: 38px;
-            display: inline-block;
-            text-align: center;
-            border: 2px solid #fff;
-            border-radius: 50%;
-            color: #fff;
-            &:hover {
-                color: $primary;
-                border-color: $primary;
-                i {
-                    transform: rotate(360deg);
-                    transition: 1s;
-                }
-            }
-        }
-    }
 }

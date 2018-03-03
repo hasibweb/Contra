@@ -1356,6 +1356,28 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
             justify-content: center; }
     .icon-group li {
       margin-right: 5px; } }
+/* Icon Group */
+.icon-group-f {
+  padding-top: 10px; }
+  .icon-group-f li:not(:last-child) {
+    margin-right: 10px; }
+  .icon-group-f a {
+    line-height: 35px;
+    width: 38px;
+    display: inline-block;
+    text-align: center;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    color: #fff; }
+    .icon-group-f a:hover {
+      color: #ffa200;
+      border-color: #ffa200; }
+      .icon-group-f a:hover i {
+        -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+        -webkit-transition: 1s;
+        transition: 1s; }
+
 /*=============================================
                 Hover Effect
 =============================================*/
@@ -1556,8 +1578,8 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
       background: #cc8200; }
   .header-menu.Sticky-nav.sticky {
     padding: 13px 0;
-    -webkit-transition: .5s ease;
-    transition: .5s ease;
+    -webkit-transition: .3s ease;
+    transition: .3s ease;
     -webkit-box-shadow: 0 0px 20px 0 #555;
             box-shadow: 0 0px 20px 0 #555; }
 
@@ -1939,8 +1961,7 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
 
 /* Footer Widget */
 .footer-widget {
-  /* Links */
-  /* Icon Group */ }
+  /* Links */ }
   .footer-widget h5 {
     color: #fff;
     font-weight: bold; }
@@ -1976,26 +1997,6 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
   .footer-widget .footer-brand {
     margin-bottom: 20px;
     display: block; }
-  .footer-widget .icon-group {
-    padding-top: 10px; }
-    .footer-widget .icon-group li:not(:last-child) {
-      margin-right: 10px; }
-    .footer-widget .icon-group a {
-      line-height: 35px;
-      width: 38px;
-      display: inline-block;
-      text-align: center;
-      border: 2px solid #fff;
-      border-radius: 50%;
-      color: #fff; }
-      .footer-widget .icon-group a:hover {
-        color: #ffa200;
-        border-color: #ffa200; }
-        .footer-widget .icon-group a:hover i {
-          -webkit-transform: rotate(360deg);
-                  transform: rotate(360deg);
-          -webkit-transition: 1s;
-          transition: 1s; }
 
 /*=============================================
                 All Page
@@ -2786,4 +2787,5 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .blog-details-page .page-hero h2 {
     font-size: 38px; } }
+
 /*# sourceMappingURL=main.css.map */
