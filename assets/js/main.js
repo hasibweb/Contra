@@ -327,6 +327,7 @@
         $('.slider-for').slick({
             slidesToShow: 1,
             slidesToScroll: 1,
+            autoplay: true,
             arrows: true,
             prevArrow: '<div class="slick-next"><i class="fa fa-angle-right"></i></div>',
             nextArrow: '<div class="slick-prev"><i class="fa fa-angle-left"></i></div>',
@@ -334,14 +335,13 @@
             asNavFor: '.slider-nav'
         });
         $('.slider-nav').slick({
-            slidesToShow: 6,
+            slidesToShow: 5,
             slidesToScroll: 1,
             asNavFor: '.slider-for',
             dots: false,
             arrows: false,
-            centerMode: false,
+            centerMode: true,
             focusOnSelect: true,
-            autoplay: true,
             responsive: [
 
                 {
