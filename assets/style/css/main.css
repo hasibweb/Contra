@@ -1035,6 +1035,110 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
     -webkit-transform: perspective(2500px) rotateX(0);
             transform: perspective(2500px) rotateX(0); }
 
+/* Slider */
+.slick-slider {
+  position: relative;
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent; }
+
+.slick-list {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  margin: 0;
+  padding: 0; }
+  .slick-list:focus {
+    outline: none; }
+  .slick-list.dragging {
+    cursor: pointer;
+    cursor: hand; }
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0); }
+
+.slick-track {
+  position: relative;
+  left: 0;
+  top: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+  .slick-track:before, .slick-track:after {
+    content: "";
+    display: table; }
+  .slick-track:after {
+    clear: both; }
+  .slick-loading .slick-track {
+    visibility: hidden; }
+
+.slick-slide {
+  float: left;
+  height: 100%;
+  min-height: 1px;
+  display: none; }
+  [dir="rtl"] .slick-slide {
+    float: right; }
+  .slick-slide img {
+    display: block; }
+  .slick-slide.slick-loading img {
+    display: none; }
+  .slick-slide.dragging img {
+    pointer-events: none; }
+  .slick-initialized .slick-slide {
+    display: block; }
+  .slick-loading .slick-slide {
+    visibility: hidden; }
+  .slick-vertical .slick-slide {
+    display: block;
+    height: auto;
+    border: 1px solid transparent; }
+
+.slick-arrow.slick-hidden {
+  display: none; }
+
+/* ============== Slick Customize ============== */
+.arrow-style, .slick-next, .slick-prev {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: 1;
+  color: #fff;
+  line-height: 36px;
+  width: 36px;
+  text-align: center;
+  border: 2px solid #fff;
+  display: block;
+  font-size: 1.3rem;
+  cursor: pointer; }
+
+.slick-next {
+  right: 30px; }
+
+.slick-prev {
+  left: 30px; }
+
+@media screen and (max-width: 767px) {
+  .arrow-style, .slick-next, .slick-prev {
+    line-height: 25px;
+    width: 25px; }
+
+  .slick-next {
+    right: 5px; }
+
+  .slick-prev {
+    left: 5px; } }
 /*=============================================
                 Components
 =============================================*/
@@ -1285,6 +1389,30 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
   .services-accordian .card-header h6.collapsed::before {
     content: '\f105'; }
 
+/* =========== Accordian # ============= */
+.accordion-3 .card {
+  margin-bottom: 5px; }
+  .accordion-3 .card .card-header {
+    background: #ffa200;
+    padding: 0; }
+    .accordion-3 .card .card-header * {
+      color: #fff; }
+    .accordion-3 .card .card-header .title {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      cursor: pointer;
+      padding: 15px 35px;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      .accordion-3 .card .card-header .title:after {
+        content: '\f056';
+        font-family: 'FontAwesome';
+        margin-left: auto; }
+      .accordion-3 .card .card-header .title.collapsed::after {
+        content: '\f055'; }
+
 /*=============================================
                 Blog Image Icon Hover
 =============================================*/
@@ -1377,6 +1505,18 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
                 transform: rotate(360deg);
         -webkit-transition: 1s;
         transition: 1s; }
+
+.description-box {
+  background: #2a3e64;
+  padding: 35px 25px; }
+  .description-box * {
+    color: #fff; }
+  .description-box .title {
+    display: inline-block;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 5px; }
+  .description-box tbody td {
+    padding: 12px 0; }
 
 /*=============================================
                 Hover Effect
@@ -1854,6 +1994,57 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
     left: 0;
     top: 0; }
 
+/* =============== Our Services ================ 
+==============================================*/
+.our-services {
+  padding: 50px 0 80px; }
+  .our-services .section-heading {
+    margin-bottom: 45px; }
+
+.service-cards .card {
+  border: 0; }
+  .service-cards .card:hover .card-title {
+    color: #ffa200; }
+  .service-cards .card:hover figcaption {
+    bottom: 0; }
+  .service-cards .card .card-img-top {
+    border-radius: 0; }
+  .service-cards .card .card-body {
+    padding: 0; }
+    .service-cards .card .card-body .card-title {
+      margin: 10px 0 10px; }
+.service-cards figure {
+  position: relative;
+  overflow: hidden; }
+  .service-cards figure figcaption {
+    position: absolute;
+    bottom: calc(0% - 70px);
+    left: 0;
+    text-align: center;
+    background: #282828;
+    -webkit-transition: .3s ease-in;
+    transition: .3s ease-in;
+    width: 100%;
+    padding: 9px 0;
+    color: #fff; }
+    .service-cards figure figcaption a {
+      color: #fff; }
+      .service-cards figure figcaption a:hover {
+        color: #ffa200; }
+    .service-cards figure figcaption .hvr-icon-forward:before {
+      content: '\f178';
+      right: 4px; }
+
+/* =============== Our Services// ================ */
+/* =============== Home 2 Our Services ================ */
+.home2 .service-cards figure figcaption {
+  background: #ffa200; }
+  .home2 .service-cards figure figcaption a {
+    color: #fff; }
+    .home2 .service-cards figure figcaption a:hover {
+      color: #fff; }
+
+/* =============== Home 2 Our Services// ================ */
 /* ============================================
             Map 
 ==============================================*/
@@ -1864,6 +2055,14 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
 #home_map {
   width: 100%;
   height: 100%; }
+
+/*=============================================
+                Syncing Slider
+=============================================*/
+.syncing-slider {
+  padding: 90px 0 0; }
+  .syncing-slider .small-image-bottom {
+    margin: 20px 0 50px; }
 
 /* Sidebar Widget */
 #widget-form input {
@@ -2004,57 +2203,6 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
 /*=============================================
                 Home Styles
 =============================================*/
-/* =============== Our Services ================ 
-==============================================*/
-.our-services {
-  padding: 50px 0 80px; }
-  .our-services .section-heading {
-    margin-bottom: 45px; }
-
-.service-cards .card {
-  border: 0; }
-  .service-cards .card:hover .card-title {
-    color: #ffa200; }
-  .service-cards .card:hover figcaption {
-    bottom: 0; }
-  .service-cards .card .card-img-top {
-    border-radius: 0; }
-  .service-cards .card .card-body {
-    padding: 0; }
-    .service-cards .card .card-body .card-title {
-      margin: 10px 0 10px; }
-.service-cards figure {
-  position: relative;
-  overflow: hidden; }
-  .service-cards figure figcaption {
-    position: absolute;
-    bottom: calc(0% - 70px);
-    left: 0;
-    text-align: center;
-    background: #282828;
-    -webkit-transition: .3s ease-in;
-    transition: .3s ease-in;
-    width: 100%;
-    padding: 9px 0;
-    color: #fff; }
-    .service-cards figure figcaption a {
-      color: #fff; }
-      .service-cards figure figcaption a:hover {
-        color: #ffa200; }
-    .service-cards figure figcaption .hvr-icon-forward:before {
-      content: '\f178';
-      right: 4px; }
-
-/* =============== Our Services// ================ */
-/* =============== Home 2 Our Services ================ */
-.home2 .service-cards figure figcaption {
-  background: #ffa200; }
-  .home2 .service-cards figure figcaption a {
-    color: #fff; }
-    .home2 .service-cards figure figcaption a:hover {
-      color: #fff; }
-
-/* =============== Home 2 Our Services// ================ */
 /* =============== We Provide ================ 
 ============================================*/
 .we-provide {
@@ -2790,5 +2938,21 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
 /*=============================================
                 Project Details
 =============================================*/
+.project-details-page .services-quote {
+  padding-top: 50px; }
+
+.content-area .dobuel-column {
+  padding-bottom: 50px;
+  border-bottom: 1px solid #ddd; }
+.content-area .text-content .arrow-h-list {
+  line-height: 30px; }
+  .content-area .text-content .arrow-h-list li::before {
+    content: '\f07e';
+    font-family: 'fontawesome';
+    margin-right: 5px; }
+
+@media screen and (max-width: 767px) {
+  .content-area .overview h3 {
+    font-size: 27px; } }
 
 /*# sourceMappingURL=main.css.map */

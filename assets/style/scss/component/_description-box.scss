@@ -1,0 +1,19 @@
+    .description-box {
+        background: #2a3e64;
+        padding: 35px 25px;
+        * {
+            color: #fff;
+        }
+        .title {
+            display: inline-block;
+            border-bottom: 2px solid #fff;
+            padding-bottom: 5px;
+        }
+        table {}
+        tbody {
+            tr {}
+            td {
+                padding: 12px 0;
+            }
+        }
+    }

@@ -18,6 +18,7 @@
         heroSlider();
         stickyHeader();
         aosScroll();
+        syncingSlider();
     });
 
     // Document Ready Function
@@ -30,6 +31,7 @@
         imagePopup();
         servicesGridFilter();
         classActivation();
+        syncingSlider();
     });
 
     // Window Resize Function
@@ -320,6 +322,52 @@
         });
     }
 
+    // ========================== Syncing Slider ==========================
+    function syncingSlider() {
+        $('.slider-for').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: true,
+            prevArrow: '<div class="slick-next"><i class="fa fa-angle-right"></i></div>',
+            nextArrow: '<div class="slick-prev"><i class="fa fa-angle-left"></i></div>',
+            fade: true,
+            asNavFor: '.slider-nav'
+        });
+        $('.slider-nav').slick({
+            slidesToShow: 6,
+            slidesToScroll: 1,
+            asNavFor: '.slider-for',
+            dots: false,
+            arrows: false,
+            centerMode: false,
+            focusOnSelect: true,
+            autoplay: true,
+            responsive: [
+
+                {
+                    breakpoint: 767,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 991,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 4,
+                        slidesToScroll: 1
+                    }
+                }
+            ]
+        });
+    }
 
 
 

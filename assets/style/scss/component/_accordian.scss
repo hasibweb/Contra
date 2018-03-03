@@ -48,3 +48,32 @@
         }
     }
 }
+
+/* =========== Accordian # ============= */
+
+.accordion-3 {
+    .card {
+        margin-bottom: 5px;
+        .card-header {
+            background: $primary;
+            padding: 0;
+            * {
+                color: #fff;
+            }
+            .title {
+                display: flex;
+                cursor: pointer;
+                padding: 15px 35px;
+                align-items: center;
+                &:after {
+                    content: '\f056';
+                    font-family: 'FontAwesome';
+                    margin-left: auto;
+                }
+                &.collapsed::after {
+                    content: '\f055';
+                }
+            }
+        }
+    }
+}

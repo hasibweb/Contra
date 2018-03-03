@@ -1,3 +1,40 @@
 /*=============================================
                 Project Details
 =============================================*/
+
+// Project Details Page
+.project-details-page {
+    .services-quote {
+        padding-top: 50px;
+    }
+}
+
+// Content Area
+.content-area {
+    .dobuel-column {
+        padding-bottom: 50px;
+        border-bottom: 1px solid #ddd;
+    }
+    .text-content {
+        .arrow-h-list {
+            line-height: 30px;
+            li {
+                &::before {
+                    content: '\f07e';
+                    font-family: 'fontawesome';
+                    margin-right: 5px;
+                }
+            }
+        }
+    }
+}
+
+@include media('small') {
+    .content-area {
+        .overview {
+            h3 {
+                font-size: 27px;
+            }
+        }
+    }
+}
