@@ -110,6 +110,10 @@ section {
             Common Class / Id
 ================================================*/
 
+.overflow-hidden {
+    overflow: hidden;
+}
+
 .text-primary {
     color: $primary !important;
 }

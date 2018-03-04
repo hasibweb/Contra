@@ -91,6 +91,9 @@ section {
 /* ===============================================
             Common Class / Id
 ================================================*/
+.overflow-hidden {
+  overflow: hidden; }
+
 .text-primary {
   color: #ffa200 !important; }
 
@@ -1517,6 +1520,27 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
     padding-bottom: 5px; }
   .description-box tbody td {
     padding: 12px 0; }
+
+/*=============================================
+                Checkbox
+=============================================*/
+.chickbox-style label {
+  cursor: pointer; }
+  .chickbox-style label input[type="checkbox"] {
+    display: none; }
+    .chickbox-style label input[type="checkbox"] + .lable-text::before {
+      content: '\f096';
+      font-family: 'fontawesome';
+      color: #ddd; }
+    .chickbox-style label input[type="checkbox"]:checked + .lable-text::before {
+      content: '\f14a';
+      font-family: 'fontawesome';
+      color: #ffa200; }
+  .chickbox-style label .lable-text::before {
+    margin-right: 10px;
+    padding: 5px;
+    display: inline-block;
+    font-size: 20px; }
 
 /*=============================================
                 Hover Effect
@@ -2954,5 +2978,226 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
 @media screen and (max-width: 767px) {
   .content-area .overview h3 {
     font-size: 27px; } }
+/*=============================================
+                Services Details
+=============================================*/
+.services-details-body {
+  padding-top: 70px; }
 
+.services-details-sidebar {
+  /* Sidebar Widget */ }
+  .services-details-sidebar .title {
+    padding-bottom: 18px;
+    margin-bottom: 28px;
+    position: relative;
+    font-weight: bold; }
+    .services-details-sidebar .title:after {
+      content: '';
+      position: absolute;
+      width: 70px;
+      height: 1px;
+      background: #ffa200;
+      left: 0;
+      bottom: 0; }
+  .services-details-sidebar .sidebar-widget .list-group-item {
+    background: #f4f4f4;
+    -webkit-transition: .2s ease-in;
+    transition: .2s ease-in; }
+    .services-details-sidebar .sidebar-widget .list-group-item:hover {
+      background: #ffa200;
+      color: #fff; }
+  .services-details-sidebar .sidebar-widget.brouchres .list-group-item {
+    margin-bottom: 15px; }
+    .services-details-sidebar .sidebar-widget.brouchres .list-group-item .fa {
+      margin-right: 10px; }
+
+.services-details-content .title {
+  font-weight: bold;
+  font-size: 25px;
+  margin-bottom: 25px; }
+.services-details-content .alpha-list {
+  line-height: 40px; }
+
+.pricing-table .block-title {
+  padding: 15px;
+  color: #fff;
+  background: #ffa200;
+  text-align: center; }
+.pricing-table .table thead th {
+  border: 0; }
+  .pricing-table .table thead th:not(:last-child) {
+    border-right: 1px solid #e9ecef; }
+  .pricing-table .table thead th:not(:first-child) {
+    text-align: center; }
+.pricing-table .table tbody tr:first-child td {
+  border-top: 0; }
+.pricing-table .table tbody tr:last-child td {
+  border-bottom: 1px solid #e9ecef; }
+.pricing-table .table tbody tr td:not(:last-child) {
+  border-right: 1px solid #e9ecef; }
+.pricing-table .table tbody tr td:not(:first-child) {
+  text-align: center; }
+
+/*=============================================
+                Shop Page
+=============================================*/
+.product-shop {
+  padding: 50px 0;
+  background: #f9f9f9; }
+
+.shop-sidebar .sidebar-widget {
+  background: #fff;
+  /* Search From */
+  /* Category */
+  /* Filter By Price */
+  /* Review */ }
+  .shop-sidebar .sidebar-widget .title {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 15px;
+    margin-bottom: 15px; }
+  .shop-sidebar .sidebar-widget.search form {
+    background: #ffa200;
+    padding: 5px 10px;
+    color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    border-radius: 5px; }
+    .shop-sidebar .sidebar-widget.search form input {
+      display: inline-block;
+      width: 100%;
+      padding: 10px;
+      background: transparent;
+      color: #fff; }
+      .shop-sidebar .sidebar-widget.search form input::-webkit-input-placeholder {
+        /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: #fff;
+        opacity: 1;
+        /* Firefox */ }
+      .shop-sidebar .sidebar-widget.search form input:-ms-input-placeholder {
+        /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: #fff;
+        opacity: 1;
+        /* Firefox */ }
+      .shop-sidebar .sidebar-widget.search form input::-ms-input-placeholder {
+        /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: #fff;
+        opacity: 1;
+        /* Firefox */ }
+      .shop-sidebar .sidebar-widget.search form input::placeholder {
+        /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: #fff;
+        opacity: 1;
+        /* Firefox */ }
+  .shop-sidebar .sidebar-widget.category ul li.colaps {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .shop-sidebar .sidebar-widget.category ul li.colaps::after {
+      content: '\f196';
+      font-family: 'fontawesome';
+      display: inline-block; }
+    .shop-sidebar .sidebar-widget.category ul li.colaps.show::after {
+      content: '\f147';
+      font-family: 'fontawesome';
+      display: inline-block;
+      color: tomato; }
+  .shop-sidebar .sidebar-widget.category ul ul {
+    padding: 10px; }
+  .shop-sidebar .sidebar-widget.filter-price #filter-slider-range {
+    margin: 25px 0 10px;
+    border: 0;
+    background: #eee; }
+  .shop-sidebar .sidebar-widget.filter-price #filter-amount {
+    border: 0;
+    margin-left: 10px;
+    font-weight: bold; }
+  .shop-sidebar .sidebar-widget.filter-price .ui-widget-header {
+    background: #ffa200; }
+  .shop-sidebar .sidebar-widget.filter-price label {
+    font-weight: 500; }
+  .shop-sidebar .sidebar-widget.filter-price .ui-slider-horizontal {
+    height: 8px; }
+  .shop-sidebar .sidebar-widget.filter-price .ui-slider .ui-slider-handle {
+    width: 11px;
+    height: 18px;
+    -webkit-box-shadow: 0 0 0px 0px #222;
+            box-shadow: 0 0 0px 0px #222; }
+  .shop-sidebar .sidebar-widget.review .single-review:not(:first-of-type) {
+    border-top: 1px solid #ddd; }
+
+/* Shop Content */
+.shop-content {
+  /* Product Items */ }
+  .shop-content .shop-banner figure {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden; }
+    .shop-content .shop-banner figure::before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: #0b1830;
+      opacity: 0.5;
+      left: 0;
+      top: 0; }
+    .shop-content .shop-banner figure figcaption {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      z-index: 2; }
+      .shop-content .shop-banner figure figcaption * {
+        color: #fff; }
+      .shop-content .shop-banner figure figcaption .text {
+        padding: 30px; }
+        .shop-content .shop-banner figure figcaption .text .button-primary {
+          border-radius: 25px;
+          text-transform: uppercase;
+          margin-top: 15px; }
+          .shop-content .shop-banner figure figcaption .text .button-primary i {
+            margin-right: 8px; }
+  .shop-content .product-items figure figcaption {
+    background: #fff;
+    border: 1px solid #eee;
+    border-top: 0; }
+
+/* Responsive Shop */
+@media screen and (max-width: 767px) {
+  .shop-content .shop-banner figure figcaption h2 {
+    font-size: 25px;
+    line-height: 26px;
+    margin-bottom: 0px; }
+  .shop-content .shop-banner figure figcaption h3 {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 0px; }
+  .shop-content .shop-banner figure figcaption .button-primary {
+    margin-top: 0;
+    padding: 10px;
+    font-size: 90%; } }
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .shop-content .shop-banner figure figcaption h2 {
+    font-size: 25px;
+    line-height: 26px;
+    margin-bottom: 0px; }
+  .shop-content .shop-banner figure figcaption h3 {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 0px; }
+  .shop-content .shop-banner figure figcaption .button-primary {
+    margin-top: 0;
+    padding: 10px;
+    font-size: 90%; } }
 /*# sourceMappingURL=main.css.map */

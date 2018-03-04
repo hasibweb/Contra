@@ -1,0 +1,97 @@
+/*=============================================
+                Services Details
+=============================================*/
+
+.services-details-body {
+    padding-top: 70px;
+}
+
+// Services Details Sidebar
+.services-details-sidebar {
+    .title {
+        padding-bottom: 18px;
+        margin-bottom: 28px;
+        position: relative;
+        font-weight: bold;
+        &:after {
+            content: '';
+            position: absolute;
+            width: 70px;
+            height: 1px;
+            background: $primary;
+            left: 0;
+            bottom: 0;
+        }
+    }
+    /* Sidebar Widget */
+    .sidebar-widget {
+        .list-group-item {
+            background: #f4f4f4;
+            transition: .2s ease-in;
+            &:hover {
+                background: $primary;
+                color: #fff;
+            }
+        }
+        &.brouchres {
+            .list-group-item {
+                margin-bottom: 15px;
+                .fa {
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+}
+
+// Services Details Content
+.services-details-content {
+    .title {
+        font-weight: bold;
+        font-size: 25px;
+        margin-bottom: 25px;
+    }
+    .alpha-list {
+        line-height: 40px;
+    }
+}
+
+.pricing-table {
+    .block-title {
+        padding: 15px;
+        color: #fff;
+        background: $primary;
+        text-align: center;
+    }
+    .table {
+        thead {
+            th {
+                border: 0;
+                &:not(:last-child) {
+                    border-right: 1px solid #e9ecef;
+                }
+                &:not(:first-child) {
+                    text-align: center;
+                }
+            }
+        }
+        tbody {
+            tr {
+                &:first-child td {
+                    border-top: 0;
+                }
+                &:last-child td {
+                    border-bottom: 1px solid #e9ecef;
+                }
+                td {
+                    &:not(:last-child) {
+                        border-right: 1px solid #e9ecef;
+                    }
+                    &:not(:first-child) {
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}

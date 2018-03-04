@@ -1,0 +1,28 @@
+/*=============================================
+                Checkbox
+=============================================*/
+
+.chickbox-style {
+    label {
+        cursor: pointer;
+        input[type="checkbox"] {
+            display: none;
+            &+.lable-text::before {
+                content: '\f096';
+                font-family: 'fontawesome';
+                color: #ddd;
+            }
+            &:checked+.lable-text::before {
+                content: '\f14a';
+                font-family: 'fontawesome';
+                color: $primary;
+            }
+        }
+        .lable-text::before {
+            margin-right: 10px;
+            padding: 5px;
+            display: inline-block;
+            font-size: 20px;
+        }
+    }
+}

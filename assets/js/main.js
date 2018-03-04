@@ -32,6 +32,7 @@
         servicesGridFilter();
         classActivation();
         syncingSlider();
+        jaueryUiXp();
     });
 
     // Window Resize Function
@@ -368,6 +369,29 @@
             ]
         });
     }
+
+    // ========================== Jquery Ui xp ==========================
+
+
+    function jaueryUiXp() {
+
+        // Range Slider
+        $("#filter-slider-range").slider({
+            range: true,
+            min: 0,
+            max: 500,
+            values: [120, 370],
+            slide: function (event, ui) {
+                $("#filter-amount").val("$" + ui.values[0] + " - $" + ui.values[1]);
+            }
+
+        });
+
+        $("#filter-amount").val("$" + $("#filter-slider-range").slider("values", 0) + " - $" + $("#filter-slider-range").slider("values", 1));
+
+
+    }
+
 
 
 
