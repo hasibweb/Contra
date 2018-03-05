@@ -108,6 +108,9 @@
     background: #fff;
     padding: 18px 0;
     .menu-list {
+        li {
+            position: relative;
+        }
         a {
             padding: 8px 20px;
             font-weight: 500;
@@ -124,6 +127,30 @@
                 &:hover {
                     background: darken($primary, 10%);
                 }
+            }
+        }
+        .drop-down {
+            padding: 10px;
+            background: $primary;
+            position: absolute;
+            position: absolute;
+            top: calc(100% + 18px);
+            left: -50%;
+            width: 200px;
+            display: none;
+            a {
+                color: #fff;
+                display: block;
+                &:hover {
+                    background: darken($primary, 7%);
+                }
+            }
+        }
+        .drop-down-link {
+            &::after {
+                content: '\f107';
+                font-family: 'fontawesome';
+                margin-left: 10px;
             }
         }
     }

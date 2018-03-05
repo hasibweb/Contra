@@ -30,7 +30,7 @@
         searchForm();
         imagePopup();
         servicesGridFilter();
-        classActivation();
+        toggleActivation();
         syncingSlider();
         jaueryUiXp();
     });
@@ -314,13 +314,26 @@
         });
     }
 
-    // ========================== Class Activation ==========================
+    // ========================== Toggle Activation ==========================
 
-    function classActivation() {
+    function toggleActivation() {
+        // Heart Icon Toggle
         $('.love-icon .fa-heart').on('click', function () {
             $(this).toggleClass('liked');
-
         });
+
+        // Dropdown toggle
+        $('.drop-down-link').on('click', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            $('#slick_menu .drop-down').slideToggle();
+        })
+        $(document).on('click', function (e) {
+            if (!(e.target.closest('#slick_menu .drop-down'))) {
+                $('#slick_menu .drop-down').slideUp();
+
+            }
+        })
     }
 
     // ========================== Syncing Slider ==========================

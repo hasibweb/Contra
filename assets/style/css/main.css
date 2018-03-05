@@ -1745,6 +1745,8 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
 .header-menu {
   background: #fff;
   padding: 18px 0; }
+  .header-menu .menu-list li {
+    position: relative; }
   .header-menu .menu-list a {
     padding: 8px 20px;
     font-weight: 500;
@@ -1757,6 +1759,24 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
     color: #fff !important; }
     .header-menu .menu-list .contact-btn a:hover {
       background: #cc8200; }
+  .header-menu .menu-list .drop-down {
+    padding: 10px;
+    background: #ffa200;
+    position: absolute;
+    position: absolute;
+    top: calc(100% + 18px);
+    left: -50%;
+    width: 200px;
+    display: none; }
+    .header-menu .menu-list .drop-down a {
+      color: #fff;
+      display: block; }
+      .header-menu .menu-list .drop-down a:hover {
+        background: #db8b00; }
+  .header-menu .menu-list .drop-down-link::after {
+    content: '\f107';
+    font-family: 'fontawesome';
+    margin-left: 10px; }
   .header-menu.Sticky-nav.sticky {
     padding: 13px 0;
     -webkit-transition: .3s ease;
@@ -3283,5 +3303,4 @@ body[data-aos-easing="ease-in-out-quart"] [data-aos], [data-aos][data-aos][data-
 .leave-review textarea {
   height: 180px;
   resize: none; }
-
 /*# sourceMappingURL=main.css.map */
