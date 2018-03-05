@@ -110,6 +110,18 @@ section {
             Common Class / Id
 ================================================*/
 
+.table-striped tbody tr:nth-of-type(odd) {
+    background: transparent;
+}
+
+.table-striped tbody tr:nth-of-type(even) {
+    background: #f2f2f2;
+}
+
+.video-popup {
+    position: relative;
+}
+
 .overflow-hidden {
     overflow: hidden;
 }

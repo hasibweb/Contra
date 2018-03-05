@@ -2,6 +2,19 @@
                 Icons
 =============================================*/
 
+.review-star {
+    li {
+        margin-right: 4px;
+    }
+    .fa {
+        opacity: 0.7;
+    }
+    .fa-star {
+        color: $primary;
+        opacity: 1;
+    }
+}
+
 // Love Icon
 .love-icon {
     .fa-heart {

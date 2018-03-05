@@ -389,7 +389,8 @@
 
         $("#filter-amount").val("$" + $("#filter-slider-range").slider("values", 0) + " - $" + $("#filter-slider-range").slider("values", 1));
 
-
+        // Tabs
+        $("#sum-tabs").tabs();
     }
 
 
