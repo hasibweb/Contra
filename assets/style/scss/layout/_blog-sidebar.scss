@@ -19,8 +19,10 @@
     }
 }
 
-.sidebar-widget {
+.blog-sidebar .sidebar-widget {
     margin-bottom: 30px;
+    background: #fff;
+    padding: 14px;
     /* Title */
     .widget-title {
         margin-bottom: 25px;
@@ -52,12 +54,14 @@
     } // Catagory List
     .sidebar-cat-list {
         li {
-            padding: 13px 5px;
-            transition: all .1s ease-in;
             &:not(:last-child) {
                 border-bottom: 1px dashed #ddd;
             }
-            &:hover {
+            a {
+                padding: 13px 5px;
+                transition: all .1s ease-in;
+            }
+            &:hover a {
                 color: $primary;
             }
         }

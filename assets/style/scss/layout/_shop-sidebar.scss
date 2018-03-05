@@ -1,0 +1,107 @@
+/*=============================================
+                Shop Sidebar
+=============================================*/
+
+.shop-sidebar {
+    .sidebar-widget {
+        background: #fff;
+        padding: 14px;
+        .title {
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 15px;
+            margin-bottom: 15px;
+        }
+        /* Search From */
+        &.search {
+            form {
+                background: $primary;
+                padding: 5px 10px;
+                color: #fff;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                border-radius: 5px;
+                input {
+                    display: inline-block;
+                    width: 100%;
+                    padding: 10px;
+                    background: transparent;
+                    color: #fff;
+                    &::placeholder {
+                        /* Chrome, Firefox, Opera, Safari 10.1+ */
+                        color: #fff;
+                        opacity: 1;
+                        /* Firefox */
+                    }
+                }
+            }
+        }
+        /* Category */
+        &.category {
+            ul {
+                line-height: 35px;
+                li {
+                    &.colaps {
+                        display: flex;
+                        justify-content: space-between;
+                        &::after {
+                            content: '\f196';
+                            font-family: 'fontawesome';
+                            display: inline-block;
+                        }
+                        &.show {
+                            &::after {
+                                content: '\f147';
+                                font-family: 'fontawesome';
+                                display: inline-block;
+                                color: tomato;
+                            }
+                        }
+                    }
+                    &:hover>a {
+                        color: $primary;
+                        transition: .2s ease-in-out;
+                    }
+                }
+                ul {
+                    padding: 10px;
+                }
+            }
+        }
+        /* Filter By Price */
+        &.filter-price {
+            #filter-slider-range {
+                margin: 25px 0 10px;
+                border: 0;
+                background: #eee;
+            }
+            #filter-amount {
+                border: 0;
+                margin-left: 10px;
+                font-weight: bold;
+            }
+            .ui-widget-header {
+                background: $primary;
+            }
+            label {
+                font-weight: 500;
+            }
+            .ui-slider-horizontal {
+                height: 8px;
+            }
+            .ui-slider .ui-slider-handle {
+                width: 11px;
+                height: 18px;
+                box-shadow: 0 0 0px 0px #222;
+            }
+        }
+        /* Review */
+        &.review {
+            .single-review {
+                &:not(:first-of-type) {
+                    border-top: 1px solid #ddd;
+                }
+            }
+        }
+    }
+}

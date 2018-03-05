@@ -140,11 +140,24 @@ section {
     position: fixed;
     width: 100%;
     height: 100%;
-    background: $primary;
+    background-color: #fff;
+    background-image: url($img+ 'favicon.png');
+    background-position: center center;
+    background-repeat: no-repeat;
     top: 0;
     left: 0;
     overflow: hidden;
     z-index: 999999;
+    animation: preBounce 1s infinite;
+}
+
+@keyframes preBounce {
+    from {
+        transform: scale(1)
+    }
+    to {
+        transform: scale(1.2)
+    }
 }
 
 .dropdown-menu {

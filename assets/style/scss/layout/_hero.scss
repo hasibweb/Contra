@@ -215,6 +215,9 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
+    .breadcrumb {
+        padding-left: 0;
+    }
     &::before {
         content: '';
         position: absolute;
